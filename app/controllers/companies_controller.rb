@@ -5,7 +5,7 @@ class CompaniesController < ApplicationController
   end
 
   def show
-  	@company = Company.where(:id => params[:id])
+  	@company = Company.find(params[:id])
   	# company = @company.pluck(:id)
   	# user = User.find(current_user.id)
   	# following = user.follow(company)

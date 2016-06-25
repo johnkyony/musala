@@ -1,3 +1,5 @@
-- @tagcloud_elements.each do |tagcloud_element|
-    %p= tagcloud_element.text
+.col-md-10
+  .row.text-center  
+    - @tagcloud_elements.each do |tagcloud_element|
+      %p.text-info= tagcloud_element.text
   

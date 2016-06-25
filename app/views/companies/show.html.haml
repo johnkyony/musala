@@ -22,7 +22,7 @@
     - @jobs.each do |job|
       .col-md-4.col-sm-6.hero-feature
         .thumbnail
-          / %img.img-responsive{:alt => "", :src => "http://www.pptgrounds.com/wp-content/uploads/2013/02/Computer-Work-Desktop-Backgrounds.jpg"}/
+          
           .caption
             %h3= job.description
             %h4= job.company.name
@@ -31,7 +31,10 @@
             %p
             
               = link_to "View More" , job_path(job) , class: "btn btn-primary"
-              = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+              - if current_user.likes?(job)
+                = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+              - else 
+                = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"    
              
   
   

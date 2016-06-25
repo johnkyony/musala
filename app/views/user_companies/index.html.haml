@@ -21,10 +21,11 @@
                 
 
                 %p{:align => "center"}
-                  - if user_signed_in?
-                    = link_to "View Jobs" , company_path(company) , class: "btn btn-primary btn-block"
-                 
-                    / %a.btn.btn-primary.btn-block{:href => "#{company.link}"} Open
                   
-    
+                  = link_to "View Jobs" , company_path(company) , class: "btn btn-primary"
+                  -  if current_user.follows?(company)
+                    = link_to "Unfollow" , unfollow_company_path(company) , class: "btn btn-default"
+                  - else 
+                    = link_to "Follow" , follow_company_path(company) , class: "btn btn-default"
+                    
     

@@ -8,11 +8,11 @@ class JobController < ApplicationController
     require 'nokogiri'
     require 'open-uri'
 
-    @job = Job.where(:id => params[:id])
-    # links = @job.link
+    @job = Job.find(params[:id])
+    # links =
    
 
-    html_data = open("http://www.mediacongo.net/emploi-societe-18329.html").read
+    html_data = open("#{@job.link}").read
     nokogiri_object = Nokogiri::HTML(html_data)
     @tagcloud_elements = nokogiri_object.css("body>div.content>div.content_col2>div.emplois>div.section_content>p")
 
@@ -26,9 +26,9 @@ class JobController < ApplicationController
   end
   def dislike
     @job = Job.find(params[:id])
-    current_user.unlike!!(@job)
+    current_user.unlike!(@job)
     redirect_to :back , :notice => "You have disliked #{@job.description}"
 
   end
-  
+
 end

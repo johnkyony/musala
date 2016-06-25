@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'location/show'
+  get 'locations/index'
+
+  get 'locations/show'
 
   get 'user_liked_jobs/index'
 
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users
+
+  resources :locations
   resources :job do
     member do 
       get :like
