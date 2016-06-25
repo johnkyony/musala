@@ -1,0 +1,17 @@
+.container
+  .row
+    %ul.thumbnails
+      - @jobs.each do |job|
+        .col-md-4
+          .thumbnail
+            %img.img-responsive{:alt => "ALT NAME", :src => "http://placehold.it/320x200"}/
+            .caption
+              %h2= job.description
+              %h3= job.company.name
+              %h4= job.expiration
+              %p= job.place
+
+              %p{:align => "center"}
+                = link_to "Open" , new_user_session_path , class: "btn btn-primary btn-block"
+               
+  

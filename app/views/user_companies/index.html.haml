@@ -1,0 +1,30 @@
+- if @my_companies.blank?
+  %p You have currently not followed any company please click link and follow a company 
+  = link_to 'Companies' , companies_path
+- else
+
+  .container
+    .row
+      .col-lg-12
+        %h3 Following Companies
+        %hr
+  
+    .row
+      %ul.thumbnails
+        - @my_companies.each do |company|
+          .col-md-4
+            .thumbnail
+              / %img.img-responsive{:alt => "ALT NAME", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
+              .caption
+                %h2= company.name
+                
+                
+
+                %p{:align => "center"}
+                  - if user_signed_in?
+                    = link_to "View Jobs" , company_path(company) , class: "btn btn-primary btn-block"
+                 
+                    / %a.btn.btn-primary.btn-block{:href => "#{company.link}"} Open
+                  
+    
+    

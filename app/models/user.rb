@@ -1,4 +1,3 @@
-
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -10,4 +9,6 @@ class User < ActiveRecord::Base
   def set_default_role
     self.role ||= :user
   end
+  acts_as_follower
+  acts_as_liker
 end

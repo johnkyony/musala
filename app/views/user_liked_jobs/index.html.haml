@@ -1,0 +1,24 @@
+.container
+  .row
+    %ul.thumbnails
+      - @my_jobs.each do |job|
+        .col-md-4
+          .thumbnail
+            / %img.img-responsive{:alt => "ALT NAME", :src => "http://www.pptgrounds.com/wp-content/uploads/2013/02/Computer-Work-Desktop-Backgrounds.jpg"}/
+            .caption
+              %h2= job.description
+              %h3= job.company.name
+              %h4= job.expiration
+              
+              %p.glyphicon.glyphicon-map-marker= job.place
+
+              %p{:align => "center"}
+               
+                = link_to "View More" , job_path(job) , class: "btn btn-primary "
+                - if current_user.likes?(job)
+                  = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+                - else 
+                  = link_to "Like" ,  like_job_path(job) , class: "btn btn-default" 
+                 
+                 
+  

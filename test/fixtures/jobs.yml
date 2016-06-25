@@ -1,0 +1,19 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+WWF:
+  description: "Landscape Rural Development Manager"
+  link: http://www.mediacongo.net/emploi-societe-18407.html
+  company: "WWF"
+  place: "Salonga"
+  expiration: "13.06.2016"
+
+HPP:
+  description: " Notice offer"
+  link: "http://www.mediacongo.net/emploi-societe-18405.html"
+  company: "HPP-Congo"
+  place: "Kinshasa"
+  expiration: "10.06.2016"
+
+       
+

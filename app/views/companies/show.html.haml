@@ -1,0 +1,37 @@
+%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}/
+.container
+  .fb-profile
+    %img.fb-image-lg{:align => "left", :alt => "Profile image example", :src => "https://betagrowth.files.wordpress.com/2015/06/office-desk-background-2.jpg"}/
+    %img.fb-image-profile.thumbnail{:align => "left", :alt => "Profile image example", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
+    .fb-profile-text
+      %h1= @company.name
+     
+      
+
+
+
+.container
+    
+  .row
+    .col-lg-12
+      %h3 Latest Jobs
+      %hr
+  
+  / Page Features
+  .row.text-center
+    - @jobs.each do |job|
+      .col-md-4.col-sm-6.hero-feature
+        .thumbnail
+          / %img.img-responsive{:alt => "", :src => "http://www.pptgrounds.com/wp-content/uploads/2013/02/Computer-Work-Desktop-Backgrounds.jpg"}/
+          .caption
+            %h3= job.description
+            %h4= job.company.name
+            %h5= job.expiration
+            %p.glyphicon.glyphicon-map-marker= job.place
+            %p
+            
+              = link_to "View More" , job_path(job) , class: "btn btn-primary"
+              = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+             
+  
+  

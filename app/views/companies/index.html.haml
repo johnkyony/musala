@@ -1,0 +1,26 @@
+.container
+  .row
+    .col-lg-12
+      %h2 Companies
+      %hr
+  .row
+    %ul.thumbnails
+      - @companies.each do |company|
+        .col-md-4
+          .thumbnail
+            / %img.img-responsive{:alt => "ALT NAME", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
+            .caption
+              %h2= company.name
+              
+              
+
+              %p{:align => "center"}
+                
+                = link_to "View Jobs" , company_path(company) , class: "btn btn-primary "
+                -  if current_user.follows?(company)
+                  = link_to "Unfollow" , unfollow_company_path(company) , class: "btn btn-default"
+                - else 
+                  = link_to "Follow" , follow_company_path(company) , class: "btn btn-default"
+
+                  / %a.btn.btn-primary.btn-block{:href => "#{company.link}"} Opendefa
+                
