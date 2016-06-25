@@ -3,7 +3,7 @@
     .col-md-12
       %ul.nav.nav-pills
         - @location.each do |location|
-          %li.active{:role => "presentation"}
+          %li{:role => "presentation"}
             = link_to "#{location.name}" , location_path(location)
           
     
