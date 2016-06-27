@@ -70,73 +70,73 @@ class LinkedinController < ApplicationController
     end
   end
 
-  def get_full_profile
-    fprofile = FullProfile.find_by_user_id(current_user.id)
-    if fprofile.nil?
-      client = get_client
-      full_profile = client.profile(:fields => [:associations, :honors, :interests])
-      full_profile = full_profile.to_hash
-      new_full_profile = FullProfile.new(full_profile)
-      new_full_profile.user = current_user
-      new_full_profile.save 
-      new_full_profile
-    else
-      fprofile
-    end
-  end
+  # def get_full_profile
+  #   fprofile = FullProfile.find_by_user_id(current_user.id)
+  #   if fprofile.nil?
+  #     client = get_client
+  #     full_profile = client.profile(:fields => [:associations, :honors, :interests])
+  #     full_profile = full_profile.to_hash
+  #     new_full_profile = FullProfile.new(full_profile)
+  #     new_full_profile.user = current_user
+  #     new_full_profile.save 
+  #     new_full_profile
+  #   else
+  #     fprofile
+  #   end
+  # end
 
-  def get_positions
-    positions = Position.find_all_by_full_profile_id(current_user.full_profile.id)
-    if positions.empty?
-      client = get_client
-      positions = client.profile(:fields => [:positions]).positions.all
-      positions.each do |p|
-        if p.is_current == "true"
-          Position.create(
-            title: p.title, 
-            summary: p.summary, 
-            start_date: Date.parse("1/#{p.start_date.month ? p.start_date.month : 1}/#{p.start_date.year}"), 
-            end_date: Date.parse("1/#{p.end_date.month ? p.end_date.month : 1}/#{p.end_date.year}"), 
-            is_current: p.is_current, 
-            company: p.company.name, 
-            full_profile_id: current_user.full_profile.id)
-        else
-          Position.create(
-            title: p.title, 
-            summary: p.summary, 
-            start_date: Date.parse("1/#{p.start_date.month ? p.start_date.month : 1}/#{p.start_date.year}"), 
-            is_current: p.is_current, 
-            company: p.company.name, 
-            full_profile_id: current_user.full_profile.id)
-        end
-      end
-      current_user.full_profile.positions
-    else
-      positions
-    end
-  end
+  # def get_positions
+  #   positions = Position.find_all_by_full_profile_id(current_user.full_profile.id)
+  #   if positions.empty?
+  #     client = get_client
+  #     positions = client.profile(:fields => [:positions]).positions.all
+  #     positions.each do |p|
+  #       if p.is_current == "true"
+  #         Position.create(
+  #           title: p.title, 
+  #           summary: p.summary, 
+  #           start_date: Date.parse("1/#{p.start_date.month ? p.start_date.month : 1}/#{p.start_date.year}"), 
+  #           end_date: Date.parse("1/#{p.end_date.month ? p.end_date.month : 1}/#{p.end_date.year}"), 
+  #           is_current: p.is_current, 
+  #           company: p.company.name, 
+  #           full_profile_id: current_user.full_profile.id)
+  #       else
+  #         Position.create(
+  #           title: p.title, 
+  #           summary: p.summary, 
+  #           start_date: Date.parse("1/#{p.start_date.month ? p.start_date.month : 1}/#{p.start_date.year}"), 
+  #           is_current: p.is_current, 
+  #           company: p.company.name, 
+  #           full_profile_id: current_user.full_profile.id)
+  #       end
+  #     end
+  #     current_user.full_profile.positions
+  #   else
+  #     positions
+  #   end
+  # end
 
 
-  def get_educations
-    educations = Education.find_all_by_full_profile_id(current_user.full_profile.id)
-    if educations.empty?
-      client = get_client
-      educations = client.profile(:fields => [:educations]).educations.all
-      educations.each do |e|
-        new_educations = Education.create(
-          school_name: e.school_name, 
-          field_of_study: e.field_of_study, 
-          start_date: Date.parse("1/#{e.end_date.month ? p.end_date.month : 1}/#{e.end_date.year}"), 
-          end_date: Date.parse("1/#{e.end_date.month ? p.end_date.month : 1}/#{e.end_date.year}"), 
-          degree: e.degree, 
-          activities: e.activities, 
-          notes: e.notes, 
-          full_profile_id: current_user.full_profile.id)  
-      end
-      current_user.full_profile.educations
-    else
-      educations
-    end
-  end
+  # def get_educations
+  #   educations = Education.find_all_by_full_profile_id(current_user.full_profile.id)
+  #   if educations.empty?
+  #     client = get_client
+  #     educations = client.profile(:fields => [:educations]).educations.all
+  #     educations.each do |e|
+  #       new_educations = Education.create(
+  #         school_name: e.school_name, 
+  #         field_of_study: e.field_of_study, 
+  #         start_date: Date.parse("1/#{e.end_date.month ? p.end_date.month : 1}/#{e.end_date.year}"), 
+  #         end_date: Date.parse("1/#{e.end_date.month ? p.end_date.month : 1}/#{e.end_date.year}"), 
+  #         degree: e.degree, 
+  #         activities: e.activities, 
+  #         notes: e.notes, 
+  #         full_profile_id: current_user.full_profile.id)  
+  #     end
+  #     current_user.full_profile.educations
+  #   else
+  #     educations
+  #   end
+  # end
 
 end
