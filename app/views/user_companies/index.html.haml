@@ -8,24 +8,24 @@
       .col-lg-12
         %h3 Following Companies
         %hr
-  
-    .row
-      %ul.thumbnails
-        - @my_companies.each do |company|
-          .col-md-4
-            .thumbnail
-              / %img.img-responsive{:alt => "ALT NAME", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
-              .caption
-                %h2= company.name
-                
-                
-
-                %p{:align => "center"}
+    .col-lg-12
+      .row
+        %ul.thumbnails
+          - @my_companies.each do |company|
+            .col-md-12
+              .thumbnail
+                / %img.img-responsive{:alt => "ALT NAME", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
+                .caption
+                  %h2= company.name
                   
-                  = link_to "View Jobs" , company_path(company) , class: "btn btn-primary"
-                  -  if current_user.follows?(company)
-                    = link_to "Unfollow" , unfollow_company_path(company) , class: "btn btn-default"
-                  - else 
-                    = link_to "Follow" , follow_company_path(company) , class: "btn btn-default"
+                  
+
+                  %p{:align => "center"}
                     
-    
+                    = link_to "View Jobs" , company_path(company) , class: "btn btn-primary"
+                    -  if current_user.follows?(company)
+                      = link_to "Unfollow" , unfollow_company_path(company) , class: "btn btn-default"
+                    - else 
+                      = link_to "Follow" , follow_company_path(company) , class: "btn btn-default"
+                      
+      
