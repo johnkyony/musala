@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/oauth_account' => "linkedin#oauth_account"
   get '/linkedin_oauth_url' => 'linkedin#generate_linkedin_oauth_url'
 
+  resources :linkedin
   devise_for :users
   resources :users
 

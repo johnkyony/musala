@@ -1,7 +1,7 @@
 - if user_signed_in?
   li = link_to 'Companies' , companies_path
   li = link_to 'Search by locations',locations_path
-  li = link_to 'View Cv' ,  linkedin_profile_path
+  li = link_to 'View Cv' ,   linkedin_oauth_url_path
     
   ul.nav.navbar-nav.navbar-right
     li.dropdown
