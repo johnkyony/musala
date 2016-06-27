@@ -25,6 +25,8 @@ gem 'simple_form'
 gem 'high_voltage'
 gem 'devise'
 gem 'pundit'
+gem 'linkedin'
+
 group :development do
   gem 'sqlite3'
   gem 'guard-bundler'

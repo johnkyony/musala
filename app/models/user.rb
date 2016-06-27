@@ -11,4 +11,7 @@ class User < ActiveRecord::Base
   end
   acts_as_follower
   acts_as_liker
+  has_one :basic_profile
+  has_one :full_profile
+  has_one :linkedin_oauth_setting
 end

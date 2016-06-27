@@ -125,6 +125,7 @@ GEM
       haml (>= 4.0.6, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
+    hashie (3.4.4)
     high_voltage (3.0.0)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
@@ -143,6 +144,10 @@ GEM
     json (1.8.3)
     libnotify (0.9.1)
       ffi (>= 1.0.11)
+    linkedin (1.1.0)
+      hashie (~> 3.0)
+      multi_json (~> 1.0)
+      oauth (~> 0.4)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -185,6 +190,7 @@ GEM
     notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    oauth (0.5.1)
     orm_adapter (0.5.0)
     pg (0.18.4)
     pkg-config (1.1.7)
@@ -337,6 +343,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   libnotify
+  linkedin
   minitest-rails
   minitest-rails-capybara
   minitest-reporters
