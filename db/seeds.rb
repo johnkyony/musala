@@ -17,5 +17,5 @@ CSV.foreach(Rails.root.join("db/seeds_data/Job_database.csv"), headers: true) do
   company = Company.find_by name: row[2]
  
 
- Job.find_or_create_by( description: row[0] , link: row[1],  company_id: company.id , place: row[3], expiration: row[4])
+ Job.find_or_create_by( description: row[0] , link: row[1],  company_id: company.id , place: row[3], posted: row[4])
 end

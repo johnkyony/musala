@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160627115542) do
+ActiveRecord::Schema.define(version: 20160628143636) do
 
   create_table "activities", force: :cascade do |t|
     t.integer  "trackable_id"
@@ -92,10 +92,10 @@ ActiveRecord::Schema.define(version: 20160627115542) do
     t.string   "link"
     t.integer  "company_id"
     t.integer  "location_id"
-    t.string   "expiration"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "place"
+    t.date     "posted"
   end
 
   add_index "jobs", ["company_id"], name: "index_jobs_on_company_id"
@@ -164,6 +164,10 @@ ActiveRecord::Schema.define(version: 20160627115542) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "token"
+    t.string   "secret"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
