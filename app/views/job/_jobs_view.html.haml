@@ -13,7 +13,7 @@
           .caption
             %h4= job.description
             %h5= job.company.name
-            %h6= job.expiration
+            %h6= job.posted
             %p.glyphicon.glyphicon-map-marker= job.place
             %p
               - if user_signed_in?

@@ -1,7 +1,7 @@
 class JobController < ApplicationController
   # before_action :authenticate_user!
   def index
-  	@jobs = Job.order(expiration: :asc) 
+  	@jobs = Job.order(posted: :desc) 
   end
 
   def show
