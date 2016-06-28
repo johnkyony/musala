@@ -1,0 +1,1237 @@
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (3.9ms)[0m  DELETE FROM "companies"
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ActionAid"]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ActionAid"], ["created_at", "2016-06-28 17:47:05.549034"], ["updated_at", "2016-06-28 17:47:05.549034"]]
+  [1m[35m (9.8ms)[0m  COMMIT
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ActionAid"]]
+  [1m[35mCompany Load (7.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "American Embassy"]]
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.6ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "American Embassy"], ["created_at", "2016-06-28 17:47:05.576766"], ["updated_at", "2016-06-28 17:47:05.576766"]]
+  [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "American Embassy"]]
+  [1m[36mCompany Load (4.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35m (3.8ms)[0m  BEGIN
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ASF/PSI"], ["created_at", "2016-06-28 17:47:05.626293"], ["updated_at", "2016-06-28 17:47:05.626293"]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mCompany Load (0.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (1.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (1.5ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (27.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (10.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (25.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (30.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (3.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (8.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (0.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (0.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (0.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (2.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (4.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (4.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (1.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (1.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (3.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (6.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mCompany Load (1.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "AWF"]]
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "AWF"], ["created_at", "2016-06-28 17:47:05.896596"], ["updated_at", "2016-06-28 17:47:05.896596"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36mCompany Load (2.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "AWF"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "BCECO"]]
+  [1m[36m (1.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "BCECO"], ["created_at", "2016-06-28 17:47:05.914076"], ["updated_at", "2016-06-28 17:47:05.914076"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "BCECO"]]
+  [1m[36mCompany Load (0.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "BCECO"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "BCECO"]]
+  [1m[36mCompany Load (2.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Cambridge Education"], ["created_at", "2016-06-28 17:47:05.926780"], ["updated_at", "2016-06-28 17:47:05.926780"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (2.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (6.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (1.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (9.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (3.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (1.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (1.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (3.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (3.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mCompany Load (3.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mCompany Load (10.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Caritas Kabinda"]]
+  [1m[36m (3.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Caritas Kabinda"], ["created_at", "2016-06-28 17:47:06.021812"], ["updated_at", "2016-06-28 17:47:06.021812"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Caritas Kabinda"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Caritas Kabinda"]]
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Caritas Kabinda"]]
+  [1m[36mCompany Load (4.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Caritas Kabinda"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Caritas Kabinda"]]
+  [1m[36mCompany Load (1.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Caritas Kabinda"]]
+  [1m[35mCompany Load (1.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Caritas Kabinda"]]
+  [1m[36mCompany Load (1.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cellule Infrastructures"]]
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Cellule Infrastructures"], ["created_at", "2016-06-28 17:47:06.051746"], ["updated_at", "2016-06-28 17:47:06.051746"]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mCompany Load (3.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cellule Infrastructures"]]
+  [1m[35mCompany Load (6.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cellule Infrastructures"]]
+  [1m[36mCompany Load (3.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cellule Infrastructures"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Centre Médical Diamant"]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Centre Médical Diamant"], ["created_at", "2016-06-28 17:47:06.100062"], ["updated_at", "2016-06-28 17:47:06.100062"]]
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Centre Médical Diamant"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Centre Médical Diamant"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Centre Médical Diamant"]]
+  [1m[36mCompany Load (0.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Centre Médical Diamant"]]
+  [1m[35mCompany Load (2.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Centre Médical Diamant"]]
+  [1m[36mCompany Load (3.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35m (2.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Chemonics"], ["created_at", "2016-06-28 17:47:06.142359"], ["updated_at", "2016-06-28 17:47:06.142359"]]
+  [1m[35m (4.9ms)[0m  COMMIT
+  [1m[36mCompany Load (6.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (5.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (4.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (5.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (13.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (5.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (13.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (9.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (4.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (7.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (5.5ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (8.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (1.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CICR"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "CICR"], ["created_at", "2016-06-28 17:47:06.316840"], ["updated_at", "2016-06-28 17:47:06.316840"]]
+  [1m[36m (9.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (4.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CICR"]]
+  [1m[36mCompany Load (10.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CONAFED"]]
+  [1m[35m (4.5ms)[0m  BEGIN
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "CONAFED"], ["created_at", "2016-06-28 17:47:06.367599"], ["updated_at", "2016-06-28 17:47:06.367599"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36mCompany Load (7.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CONAFED"]]
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CRS"]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "CRS"], ["created_at", "2016-06-28 17:47:06.408947"], ["updated_at", "2016-06-28 17:47:06.408947"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CRS"]]
+  [1m[36mCompany Load (2.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CRS"]]
+  [1m[35mCompany Load (1.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CRS"]]
+  [1m[36mCompany Load (7.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CRS"]]
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CRS"]]
+  [1m[36mCompany Load (1.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CRS"]]
+  [1m[35mCompany Load (5.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CRS"]]
+  [1m[36mCompany Load (5.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CRS"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CRS"]]
+  [1m[36mCompany Load (1.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CTB"]]
+  [1m[35m (5.0ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "CTB"], ["created_at", "2016-06-28 17:47:06.490586"], ["updated_at", "2016-06-28 17:47:06.490586"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CTB"]]
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "EGPAF"]]
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "EGPAF"], ["created_at", "2016-06-28 17:47:06.501769"], ["updated_at", "2016-06-28 17:47:06.501769"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (6.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "EGPAF"]]
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "EGPAF"]]
+  [1m[35mCompany Load (1.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "EGPAF"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "EUP/FASS/K.OR"]]
+  [1m[35m (6.6ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "EUP/FASS/K.OR"], ["created_at", "2016-06-28 17:47:06.531438"], ["updated_at", "2016-06-28 17:47:06.531438"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "EUP/FASS/K.OR"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "fhi360"]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "fhi360"], ["created_at", "2016-06-28 17:47:06.538973"], ["updated_at", "2016-06-28 17:47:06.538973"]]
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "fhi360"]]
+  [1m[36mCompany Load (0.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "GIZ"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "GIZ"], ["created_at", "2016-06-28 17:47:06.549649"], ["updated_at", "2016-06-28 17:47:06.549649"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36mCompany Load (1.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "GIZ"]]
+  [1m[35mCompany Load (6.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "GIZ"]]
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "GIZ"]]
+  [1m[35mCompany Load (2.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "GIZ"]]
+  [1m[36mCompany Load (2.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "GIZ"]]
+  [1m[35mCompany Load (2.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Groupe FERONIA"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Groupe FERONIA"], ["created_at", "2016-06-28 17:47:06.597876"], ["updated_at", "2016-06-28 17:47:06.597876"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Groupe FERONIA"]]
+  [1m[36mCompany Load (8.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Handicap International"]]
+  [1m[35m (1.3ms)[0m  BEGIN
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Handicap International"], ["created_at", "2016-06-28 17:47:06.624493"], ["updated_at", "2016-06-28 17:47:06.624493"]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mCompany Load (2.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Handicap International"]]
+  [1m[35mCompany Load (3.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Handicap International"]]
+  [1m[36mCompany Load (14.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Handicap International"]]
+  [1m[35mCompany Load (6.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Handicap International"]]
+  [1m[36mCompany Load (6.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Handicap International"]]
+  [1m[35mCompany Load (1.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "HPP-Congo"]]
+  [1m[36m (6.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "HPP-Congo"], ["created_at", "2016-06-28 17:47:06.737489"], ["updated_at", "2016-06-28 17:47:06.737489"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "HPP-Congo"]]
+  [1m[36mCompany Load (4.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "HPP-Congo"]]
+  [1m[35mCompany Load (7.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "HPP-Congo"]]
+  [1m[36mCompany Load (2.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "i-Finance"], ["created_at", "2016-06-28 17:47:06.781607"], ["updated_at", "2016-06-28 17:47:06.781607"]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36mCompany Load (1.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (1.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (3.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (3.5ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (1.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (2.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (3.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (3.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (7.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (2.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mCompany Load (4.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ICAP"]]
+  [1m[36m (2.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "ICAP"], ["created_at", "2016-06-28 17:47:06.908211"], ["updated_at", "2016-06-28 17:47:06.908211"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ICAP"]]
+  [1m[36mCompany Load (9.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ICAP"]]
+  [1m[35mCompany Load (4.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ICGLR"]]
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "ICGLR"], ["created_at", "2016-06-28 17:47:06.950142"], ["updated_at", "2016-06-28 17:47:06.950142"]]
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ICGLR"]]
+  [1m[36mCompany Load (5.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IMA WorldHealth"]]
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "IMA WorldHealth"], ["created_at", "2016-06-28 17:47:06.981583"], ["updated_at", "2016-06-28 17:47:06.981583"]]
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36mCompany Load (4.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Inades"]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Inades"], ["created_at", "2016-06-28 17:47:06.999374"], ["updated_at", "2016-06-28 17:47:06.999374"]]
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36mCompany Load (2.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Inades"]]
+  [1m[35mCompany Load (4.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Inades"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Inades"]]
+  [1m[35mCompany Load (8.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36m (3.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "IRC"], ["created_at", "2016-06-28 17:47:07.042798"], ["updated_at", "2016-06-28 17:47:07.042798"]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (5.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (19.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (1.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (0.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (10.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (6.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (12.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (5.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (2.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (1.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (4.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (5.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "IRC"]]
+  [1m[35mCompany Load (2.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "IRC"]]
+  [1m[36mCompany Load (3.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "JICA"]]
+  [1m[35m (6.9ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "JICA"], ["created_at", "2016-06-28 17:47:07.186964"], ["updated_at", "2016-06-28 17:47:07.186964"]]
+  [1m[35m (7.2ms)[0m  COMMIT
+  [1m[36mCompany Load (2.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "JSI/USAID"]]
+  [1m[35m (1.9ms)[0m  BEGIN
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "JSI/USAID"], ["created_at", "2016-06-28 17:47:07.208375"], ["updated_at", "2016-06-28 17:47:07.208375"]]
+  [1m[35m (6.6ms)[0m  COMMIT
+  [1m[36mCompany Load (1.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "JSI/USAID"]]
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "JSI/USAID"]]
+  [1m[36mCompany Load (9.5ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "JSI/USAID"]]
+  [1m[35mCompany Load (4.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Kenya Airways"]]
+  [1m[36m (13.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kenya Airways"], ["created_at", "2016-06-28 17:47:07.280703"], ["updated_at", "2016-06-28 17:47:07.280703"]]
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Kenya Airways"]]
+  [1m[36mCompany Load (11.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Kenya Airways"]]
+  [1m[35mCompany Load (1.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Kenya Airways"]]
+  [1m[36mCompany Load (13.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "NCA"]]
+  [1m[35m (2.6ms)[0m  BEGIN
+  [1m[36mSQL (9.5ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "NCA"], ["created_at", "2016-06-28 17:47:07.342445"], ["updated_at", "2016-06-28 17:47:07.342445"]]
+  [1m[35m (3.3ms)[0m  COMMIT
+  [1m[36mCompany Load (3.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "NCA"]]
+  [1m[35mCompany Load (3.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Oxfam"]]
+  [1m[36m (3.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Oxfam"], ["created_at", "2016-06-28 17:47:07.373498"], ["updated_at", "2016-06-28 17:47:07.373498"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Oxfam"]]
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Oxfam"]]
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pact"]]
+  [1m[36m (2.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Pact"], ["created_at", "2016-06-28 17:47:07.396930"], ["updated_at", "2016-06-28 17:47:07.396930"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pact"]]
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Pact"]]
+  [1m[35mCompany Load (3.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pact"]]
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PATH"]]
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "PATH"], ["created_at", "2016-06-28 17:47:07.421484"], ["updated_at", "2016-06-28 17:47:07.421484"]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PATH"]]
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pathfinder"]]
+  [1m[36m (3.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Pathfinder"], ["created_at", "2016-06-28 17:47:07.439355"], ["updated_at", "2016-06-28 17:47:07.439355"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pathfinder"]]
+  [1m[36mCompany Load (0.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Pathfinder"]]
+  [1m[35mCompany Load (2.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pathfinder"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35m (2.1ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "PNUD"], ["created_at", "2016-06-28 17:47:07.461502"], ["updated_at", "2016-06-28 17:47:07.461502"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36mCompany Load (4.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PNUD"]]
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35mCompany Load (2.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PNUD"]]
+  [1m[36mCompany Load (1.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PNUD"]]
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PNUD"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PRINS"]]
+  [1m[36m (2.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "PRINS"], ["created_at", "2016-06-28 17:47:07.499958"], ["updated_at", "2016-06-28 17:47:07.499958"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PRINS"]]
+  [1m[36mCompany Load (1.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "RIPSEC"]]
+  [1m[35m (3.5ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "RIPSEC"], ["created_at", "2016-06-28 17:47:07.517555"], ["updated_at", "2016-06-28 17:47:07.517555"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "RIPSEC"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "RTI"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "RTI"], ["created_at", "2016-06-28 17:47:07.531878"], ["updated_at", "2016-06-28 17:47:07.531878"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "RTI"]]
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "RTI"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "RTI"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "SNV"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "SNV"], ["created_at", "2016-06-28 17:47:07.546686"], ["updated_at", "2016-06-28 17:47:07.546686"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "SNV"]]
+  [1m[35mCompany Load (2.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "SNV"]]
+  [1m[36mCompany Load (3.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "SNV"]]
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "StarTimes"]]
+  [1m[36m (2.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "StarTimes"], ["created_at", "2016-06-28 17:47:07.569477"], ["updated_at", "2016-06-28 17:47:07.569477"]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "The Union"]]
+  [1m[36m (4.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "The Union"], ["created_at", "2016-06-28 17:47:07.586272"], ["updated_at", "2016-06-28 17:47:07.586272"]]
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Trocaire"]]
+  [1m[36m (3.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Trocaire"], ["created_at", "2016-06-28 17:47:07.601454"], ["updated_at", "2016-06-28 17:47:07.601454"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Trocaire"]]
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Trocaire"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Trocaire"]]
+  [1m[36mCompany Load (2.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "UC-PIF"]]
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "UC-PIF"], ["created_at", "2016-06-28 17:47:07.625475"], ["updated_at", "2016-06-28 17:47:07.625475"]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mCompany Load (3.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "UC-PIF"]]
+  [1m[35mCompany Load (1.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "UC-PIF"]]
+  [1m[36mCompany Load (4.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "UC-PIF"]]
+  [1m[35mCompany Load (7.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "UMCOR"]]
+  [1m[36m (20.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "UMCOR"], ["created_at", "2016-06-28 17:47:07.676078"], ["updated_at", "2016-06-28 17:47:07.676078"]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "UMCOR"]]
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "UNFPA"]]
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "UNFPA"], ["created_at", "2016-06-28 17:47:07.694457"], ["updated_at", "2016-06-28 17:47:07.694457"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mCompany Load (3.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "UNFPA"]]
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "USAID"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "USAID"], ["created_at", "2016-06-28 17:47:07.711760"], ["updated_at", "2016-06-28 17:47:07.711760"]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Virunga Sarl"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Virunga Sarl"], ["created_at", "2016-06-28 17:47:07.720198"], ["updated_at", "2016-06-28 17:47:07.720198"]]
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Virunga Sarl"]]
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "WCS"], ["created_at", "2016-06-28 17:47:07.741292"], ["updated_at", "2016-06-28 17:47:07.741292"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36mCompany Load (2.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mCompany Load (6.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mCompany Load (4.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mCompany Load (1.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mCompany Load (7.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mCompany Load (2.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mCompany Load (4.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mCompany Load (7.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mCompany Load (7.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WfWI"]]
+  [1m[36m (7.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "WfWI"], ["created_at", "2016-06-28 17:47:07.831347"], ["updated_at", "2016-06-28 17:47:07.831347"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (9.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "World Vision"]]
+  [1m[36m (1.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "World Vision"], ["created_at", "2016-06-28 17:47:07.857922"], ["updated_at", "2016-06-28 17:47:07.857922"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (4.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "World Vision"]]
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "World Vision"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "World Vision"]]
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WRI"]]
+  [1m[35m (4.4ms)[0m  BEGIN
+  [1m[36mSQL (7.1ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "WRI"], ["created_at", "2016-06-28 17:47:07.885041"], ["updated_at", "2016-06-28 17:47:07.885041"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WRI"]]
+  [1m[35mCompany Load (3.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WRI"]]
+  [1m[36mCompany Load (3.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WRI"]]
+  [1m[35mCompany Load (3.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "WWF"], ["created_at", "2016-06-28 17:47:07.911560"], ["updated_at", "2016-06-28 17:47:07.911560"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (4.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (10.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (4.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (5.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (0.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (4.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (3.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (3.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (3.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (4.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mCompany Load (1.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mCompany Load (3.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "PNUD"]]
+  [1m[35mCompany Load (1.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Counterpart International"]]
+  [1m[36m (3.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Counterpart International"], ["created_at", "2016-06-28 17:47:07.993715"], ["updated_at", "2016-06-28 17:47:07.993715"]]
+  [1m[36m (15.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Counterpart International"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "CTB"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "CTB"]]
+  [1m[36mCompany Load (1.5ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "MSH"]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "MSH"], ["created_at", "2016-06-28 17:47:08.025854"], ["updated_at", "2016-06-28 17:47:08.025854"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36mCompany Load (0.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "MSH"]]
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "MSH"]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "locations"[0m
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Salonga"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Salonga"], ["created_at", "2016-06-28 17:47:08.054939"], ["updated_at", "2016-06-28 17:47:08.054939"]]
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (5.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36m (4.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kinshasa"], ["created_at", "2016-06-28 17:47:08.089539"], ["updated_at", "2016-06-28 17:47:08.089539"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (3.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"]]
+  [1m[36m (2.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"], ["created_at", "2016-06-28 17:47:08.113135"], ["updated_at", "2016-06-28 17:47:08.113135"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36m (6.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lubumbashi"], ["created_at", "2016-06-28 17:47:08.141868"], ["updated_at", "2016-06-28 17:47:08.141868"]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (2.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (7.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga ou Lubumbashi"]]
+  [1m[35m (5.5ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kananga ou Lubumbashi"], ["created_at", "2016-06-28 17:47:08.182212"], ["updated_at", "2016-06-28 17:47:08.182212"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36mLocation Load (8.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga ou Lubumbashi"]]
+  [1m[35mLocation Load (2.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga"]]
+  [1m[36m (5.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kananga"], ["created_at", "2016-06-28 17:47:08.232959"], ["updated_at", "2016-06-28 17:47:08.232959"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (12.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kikwit"]]
+  [1m[35m (2.6ms)[0m  BEGIN
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kikwit"], ["created_at", "2016-06-28 17:47:08.277548"], ["updated_at", "2016-06-28 17:47:08.277548"]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Mushie (Maï-Ndombe)"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Mushie (Maï-Ndombe)"], ["created_at", "2016-06-28 17:47:08.291921"], ["updated_at", "2016-06-28 17:47:08.291921"]]
+  [1m[35m (6.8ms)[0m  COMMIT
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bunia"]]
+  [1m[35m (2.1ms)[0m  BEGIN
+  [1m[36mSQL (14.8ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bunia"], ["created_at", "2016-06-28 17:47:08.323688"], ["updated_at", "2016-06-28 17:47:08.323688"]]
+  [1m[35m (4.9ms)[0m  COMMIT
+  [1m[36mLocation Load (5.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (7.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (15.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (4.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kisangani"]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kisangani"], ["created_at", "2016-06-28 17:47:08.407805"], ["updated_at", "2016-06-28 17:47:08.407805"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (1.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lac Télé, Lac Tumba"]]
+  [1m[36m (2.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.8ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lac Télé, Lac Tumba"], ["created_at", "2016-06-28 17:47:08.417539"], ["updated_at", "2016-06-28 17:47:08.417539"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (10.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Mbuji-Mayi et Kananga"]]
+  [1m[36m (6.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Mbuji-Mayi et Kananga"], ["created_at", "2016-06-28 17:47:08.461508"], ["updated_at", "2016-06-28 17:47:08.461508"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (0.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (3.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bukavu"]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Bukavu"], ["created_at", "2016-06-28 17:47:08.482126"], ["updated_at", "2016-06-28 17:47:08.482126"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (14.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bukavu"]]
+  [1m[36mLocation Load (7.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (5.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Uvira"]]
+  [1m[35m (3.5ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Uvira"], ["created_at", "2016-06-28 17:47:08.549697"], ["updated_at", "2016-06-28 17:47:08.549697"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabinda"]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kabinda"], ["created_at", "2016-06-28 17:47:08.567193"], ["updated_at", "2016-06-28 17:47:08.567193"]]
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (1.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabinda"]]
+  [1m[36mLocation Load (3.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (2.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kasaï-Oriental"]]
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (12.1ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kasaï-Oriental"], ["created_at", "2016-06-28 17:47:08.588394"], ["updated_at", "2016-06-28 17:47:08.588394"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (8.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Matebe"]]
+  [1m[36m (6.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.9ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Matebe"], ["created_at", "2016-06-28 17:47:08.645682"], ["updated_at", "2016-06-28 17:47:08.645682"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (11.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Monkoto"]]
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Monkoto"], ["created_at", "2016-06-28 17:47:08.692059"], ["updated_at", "2016-06-28 17:47:08.692059"]]
+  [1m[36m (11.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (7.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36mLocation Load (1.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (15.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (26.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36mLocation Load (0.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (1.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36mLocation Load (2.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (5.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (13.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (14.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (3.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (7.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (3.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (2.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Provinces"]]
+  [1m[36m (2.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Provinces"], ["created_at", "2016-06-28 17:47:08.977592"], ["updated_at", "2016-06-28 17:47:08.977592"]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (4.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Nord-Kivu"]]
+  [1m[35m (5.4ms)[0m  BEGIN
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Nord-Kivu"], ["created_at", "2016-06-28 17:47:09.016135"], ["updated_at", "2016-06-28 17:47:09.016135"]]
+  [1m[35m (15.5ms)[0m  COMMIT
+  [1m[36mLocation Load (10.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kalemie"]]
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kalemie"], ["created_at", "2016-06-28 17:47:09.074665"], ["updated_at", "2016-06-28 17:47:09.074665"]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36mLocation Load (2.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (9.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Sud-Kivu"]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Sud-Kivu"], ["created_at", "2016-06-28 17:47:09.110336"], ["updated_at", "2016-06-28 17:47:09.110336"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (2.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (6.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi et Kalemie"]]
+  [1m[35m (6.6ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lubumbashi et Kalemie"], ["created_at", "2016-06-28 17:47:09.133691"], ["updated_at", "2016-06-28 17:47:09.133691"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Sud-Kivu, Kinshasa"]]
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sud-Kivu, Kinshasa"], ["created_at", "2016-06-28 17:47:09.165880"], ["updated_at", "2016-06-28 17:47:09.165880"]]
+  [1m[35m (7.5ms)[0m  COMMIT
+  [1m[36mLocation Load (5.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (4.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (4.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Monkoto (Tshuapa)"]]
+  [1m[36m (3.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Monkoto (Tshuapa)"], ["created_at", "2016-06-28 17:47:09.213879"], ["updated_at", "2016-06-28 17:47:09.213879"]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (1.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabwela"]]
+  [1m[36m (2.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kabwela"], ["created_at", "2016-06-28 17:47:09.232961"], ["updated_at", "2016-06-28 17:47:09.232961"]]
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (1.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabwela"]]
+  [1m[36mLocation Load (1.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kabwela"]]
+  [1m[35mLocation Load (2.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lomako Yokokala"]]
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lomako Yokokala"], ["created_at", "2016-06-28 17:47:09.261597"], ["updated_at", "2016-06-28 17:47:09.261597"]]
+  [1m[36m (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (3.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (4.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Salonga"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (4.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"]]
+  [1m[36mLocation Load (8.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (0.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (9.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (16.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (17.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga ou Lubumbashi"]]
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga ou Lubumbashi"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga"]]
+  [1m[35mLocation Load (4.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kikwit"]]
+  [1m[35mLocation Load (15.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Mushie (Maï-Ndombe)"]]
+  [1m[36mLocation Load (8.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bunia"]]
+  [1m[35mLocation Load (4.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (7.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kisangani"]]
+  [1m[35mLocation Load (3.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lac Télé, Lac Tumba"]]
+  [1m[36mLocation Load (3.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (1.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bukavu"]]
+  [1m[36mLocation Load (8.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (6.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (17.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (4.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (7.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (6.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kabinda"]]
+  [1m[35mLocation Load (4.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabinda"]]
+  [1m[36mLocation Load (6.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (8.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Uvira"]]
+  [1m[35mLocation Load (7.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (15.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (3.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (10.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (2.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa ou Lubumbashi"]]
+  [1m[36m (3.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kinshasa ou Lubumbashi"], ["created_at", "2016-06-28 17:47:09.762155"], ["updated_at", "2016-06-28 17:47:09.762155"]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (3.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (7.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga et Mbuji-Mayi"]]
+  [1m[35m (7.3ms)[0m  BEGIN
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kananga et Mbuji-Mayi"], ["created_at", "2016-06-28 17:47:09.809445"], ["updated_at", "2016-06-28 17:47:09.809445"]]
+  [1m[35m (9.4ms)[0m  COMMIT
+  [1m[36mLocation Load (5.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga et Mbuji-Mayi"]]
+  [1m[35mLocation Load (10.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga et Mbuji-Mayi"]]
+  [1m[36mLocation Load (3.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (10.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga & Mbji-Mayi"]]
+  [1m[36m (4.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kananga & Mbji-Mayi"], ["created_at", "2016-06-28 17:47:09.885477"], ["updated_at", "2016-06-28 17:47:09.885477"]]
+  [1m[36m (20.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (10.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Matebe"]]
+  [1m[35mLocation Load (1.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Monkoto"]]
+  [1m[36mLocation Load (2.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (1.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (6.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36mLocation Load (2.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (3.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36mLocation Load (10.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (6.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabinda"]]
+  [1m[36mLocation Load (14.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kabinda"]]
+  [1m[35mLocation Load (9.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabinda"]]
+  [1m[36mLocation Load (1.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kabinda"]]
+  [1m[35mLocation Load (7.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bukavu"]]
+  [1m[36mLocation Load (5.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (8.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (11.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (16.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (18.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (10.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (7.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (7.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (6.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Provinces"]]
+  [1m[35mLocation Load (5.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (6.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Nord-Kivu"]]
+  [1m[35mLocation Load (17.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kalemie"]]
+  [1m[36mLocation Load (1.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (16.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kasaï-Oriental"]]
+  [1m[36mLocation Load (19.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Sud-Kivu"]]
+  [1m[35mLocation Load (4.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi et Kalemie"]]
+  [1m[35mLocation Load (7.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Sud-Kivu, Kinshasa"]]
+  [1m[36mLocation Load (3.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (7.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (15.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (4.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Monkoto (Tshuapa)"]]
+  [1m[36mLocation Load (2.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kabwela"]]
+  [1m[35mLocation Load (6.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kabwela"]]
+  [1m[36mLocation Load (3.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kabwela"]]
+  [1m[35mLocation Load (10.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Salonga"]]
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lomako Yokokala"]]
+  [1m[35mLocation Load (3.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (4.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (2.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Salonga"]]
+  [1m[36mLocation Load (3.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"]]
+  [1m[36mLocation Load (10.3ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lubumbashi"]]
+  [1m[35mLocation Load (13.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"]]
+  [1m[35mLocation Load (6.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lubumbashi"]]
+  [1m[36mLocation Load (6.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (2.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (15.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (32.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (3.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga ou Lubumbashi"]]
+  [1m[36mLocation Load (8.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga ou Lubumbashi"]]
+  [1m[35mLocation Load (28.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga"]]
+  [1m[36mLocation Load (4.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (6.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kikwit"]]
+  [1m[36mLocation Load (33.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (8.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (4.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (4.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.4ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga ou Lubumbashi"]]
+  [1m[36mLocation Load (5.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kananga ou Lubumbashi"]]
+  [1m[35mLocation Load (1.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kananga"]]
+  [1m[36mLocation Load (8.3ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kikwit"]]
+  [1m[36mLocation Load (0.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Mushie (Maï-Ndombe)"]]
+  [1m[35mLocation Load (5.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bunia"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (2.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (3.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Mushie (Maï-Ndombe)"]]
+  [1m[36mLocation Load (3.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bunia"]]
+  [1m[35mLocation Load (2.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (5.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.0ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (6.0ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (15.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kisangani"]]
+  [1m[35mLocation Load (11.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kisangani"]]
+  [1m[36mLocation Load (6.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Lac Télé, Lac Tumba"]]
+  [1m[35mLocation Load (3.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Mbuji-Mayi et Kananga"]]
+  [1m[36mLocation Load (2.5ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (5.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Lac Télé, Lac Tumba"]]
+  [1m[36mLocation Load (10.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (14.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (13.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (1.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bukavu"]]
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (3.5ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (4.4ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (0.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (1.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (0.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Bukavu"]]
+  [1m[36mLocation Load (11.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Bukavu"]]
+  [1m[35mLocation Load (1.7ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (17.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Goma"]]
+  [1m[36m (6.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.6ms)[0m  INSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Goma"], ["created_at", "2016-06-28 17:47:11.076561"], ["updated_at", "2016-06-28 17:47:11.076561"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (1.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (8.3ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.8ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mLocation Load (0.9ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Goma, Kisangani, Mbandaka"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Goma, Kisangani, Mbandaka"], ["created_at", "2016-06-28 17:47:11.113750"], ["updated_at", "2016-06-28 17:47:11.113750"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Goma, Mbandaka et Kisangani"]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Goma, Mbandaka et Kisangani"], ["created_at", "2016-06-28 17:47:11.127310"], ["updated_at", "2016-06-28 17:47:11.127310"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36mLocation Load (1.3ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kisangani"]]
+  [1m[35mLocation Load (1.9ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Provinces"]]
+  [1m[36mLocation Load (1.6ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kolwezi, Kamina, Mweneditu, Lodja et Kananga"]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "locations" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kolwezi, Kamina, Mweneditu, Lodja et Kananga"], ["created_at", "2016-06-28 17:47:11.154906"], ["updated_at", "2016-06-28 17:47:11.154906"]]
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36mLocation Load (13.8ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1[0m  [["name", "Kinshasa"]]
+  [1m[35mLocation Load (1.6ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."name" = $1 LIMIT 1  [["name", "Kinshasa"]]
+  [1m[36mSQL (22.5ms)[0m  [1mDELETE FROM "jobs"[0m
+  [1m[35mCompany Load (3.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "UC-PIF"]]
+  [1m[36mJob Load (1.2ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Assistant Technique International"], ["link", "http://www.mediacongo.net/emploi-societe-18346.html"], ["company_id", 44], ["place", "Kinshasa"], ["posted", "01.06.2016"]]
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Assistant Technique International"], ["link", "http://www.mediacongo.net/emploi-societe-18346.html"], ["company_id", 44], ["place", "Kinshasa"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.297519"], ["updated_at", "2016-06-28 17:47:11.297519"]]
+  [1m[35m (9.1ms)[0m  COMMIT
+  [1m[36mCompany Load (6.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mJob Load (5.6ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chargé de la Logistique et Sécurité"], ["link", "http://www.mediacongo.net/emploi-societe-18345.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "01.06.2016"]]
+  [1m[36m (7.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chargé de la Logistique et Sécurité"], ["link", "http://www.mediacongo.net/emploi-societe-18345.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.349609"], ["updated_at", "2016-06-28 17:47:11.349609"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (6.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mJob Load (3.4ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Chauffeur-Mécanicien"], ["link", "http://www.mediacongo.net/emploi-societe-18344.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "01.06.2016"]]
+  [1m[35m (7.0ms)[0m  BEGIN
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Chauffeur-Mécanicien"], ["link", "http://www.mediacongo.net/emploi-societe-18344.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.381636"], ["updated_at", "2016-06-28 17:47:11.381636"]]
+  [1m[35m (7.3ms)[0m  COMMIT
+  [1m[36mCompany Load (4.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mJob Load (5.6ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Entreprise development specialist"], ["link", "http://www.mediacongo.net/emploi-societe-18343.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "01.06.2016"]]
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Entreprise development specialist"], ["link", "http://www.mediacongo.net/emploi-societe-18343.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.412260"], ["updated_at", "2016-06-28 17:47:11.412260"]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cellule Infrastructures"]]
+  [1m[36mJob Load (0.9ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultant individuel, Expert en suivi & évaluation du projet d'aménagement de la route Batshamba-Tshikapa, section Pont Lovua-Tshikapa"], ["link", "http://www.mediacongo.net/emploi-societe-18342.html"], ["company_id", 8], ["place", "Kinshasa"], ["posted", "01.06.2016"]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultant individuel, Expert en suivi & évaluation du projet d'aménagement de la route Batshamba-Tshikapa, section Pont Lovua-Tshikapa"], ["link", "http://www.mediacongo.net/emploi-societe-18342.html"], ["company_id", 8], ["place", "Kinshasa"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.433460"], ["updated_at", "2016-06-28 17:47:11.433460"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mCompany Load (1.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Kenya Airways"]]
+  [1m[35mJob Load (5.2ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Agent chargé de Billetterie et Réservation"], ["link", "http://www.mediacongo.net/emploi-societe-18340.html"], ["company_id", 30], ["place", "Kinshasa"], ["posted", "01.06.2016"]]
+  [1m[36m (7.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (14.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Agent chargé de Billetterie et Réservation"], ["link", "http://www.mediacongo.net/emploi-societe-18340.html"], ["company_id", 30], ["place", "Kinshasa"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.459017"], ["updated_at", "2016-06-28 17:47:11.459017"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "UC-PIF"]]
+  [1m[36mJob Load (4.6ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Assistant Technique International"], ["link", "http://www.mediacongo.net/emploi-societe-18346.html"], ["company_id", 44], ["place", "Kinshasa"], ["posted", "01.06.2016"]]
+  [1m[35m (4.5ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Assistant Technique International"], ["link", "http://www.mediacongo.net/emploi-societe-18346.html"], ["company_id", 44], ["place", "Kinshasa"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.501521"], ["updated_at", "2016-06-28 17:47:11.501521"]]
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36mCompany Load (8.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mJob Load (0.7ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chargé de la Logistique et Sécurité"], ["link", "http://www.mediacongo.net/emploi-societe-18345.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "01.06.2016"]]
+  [1m[36m (6.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chargé de la Logistique et Sécurité"], ["link", "http://www.mediacongo.net/emploi-societe-18345.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.545522"], ["updated_at", "2016-06-28 17:47:11.545522"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WCS"]]
+  [1m[36mJob Load (3.1ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Chauffeur-Mécanicien"], ["link", "http://www.mediacongo.net/emploi-societe-18344.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "01.06.2016"]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Chauffeur-Mécanicien"], ["link", "http://www.mediacongo.net/emploi-societe-18344.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.587428"], ["updated_at", "2016-06-28 17:47:11.587428"]]
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36mCompany Load (2.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WCS"]]
+  [1m[35mJob Load (2.2ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Entreprise development specialist"], ["link", "http://www.mediacongo.net/emploi-societe-18343.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "01.06.2016"]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Entreprise development specialist"], ["link", "http://www.mediacongo.net/emploi-societe-18343.html"], ["company_id", 49], ["place", "Bukavu"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.599929"], ["updated_at", "2016-06-28 17:47:11.599929"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cellule Infrastructures"]]
+  [1m[36mJob Load (5.9ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultant individuel, Expert en suivi & évaluation du projet d'aménagement de la route Batshamba-Tshikapa, section Pont Lovua-Tshikapa"], ["link", "http://www.mediacongo.net/emploi-societe-18342.html"], ["company_id", 8], ["place", "Kinshasa"], ["posted", "01.06.2016"]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultant individuel, Expert en suivi & évaluation du projet d'aménagement de la route Batshamba-Tshikapa, section Pont Lovua-Tshikapa"], ["link", "http://www.mediacongo.net/emploi-societe-18342.html"], ["company_id", 8], ["place", "Kinshasa"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.631384"], ["updated_at", "2016-06-28 17:47:11.631384"]]
+  [1m[35m (8.4ms)[0m  COMMIT
+  [1m[36mCompany Load (5.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Kenya Airways"]]
+  [1m[35mJob Load (3.9ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Agent chargé de Billetterie et Réservation"], ["link", "http://www.mediacongo.net/emploi-societe-18340.html"], ["company_id", 30], ["place", "Kinshasa"], ["posted", "01.06.2016"]]
+  [1m[36m (5.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Agent chargé de Billetterie et Réservation"], ["link", "http://www.mediacongo.net/emploi-societe-18340.html"], ["company_id", 30], ["place", "Kinshasa"], ["posted", "2016-06-01"], ["created_at", "2016-06-28 17:47:11.666559"], ["updated_at", "2016-06-28 17:47:11.666559"]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mJob Load (3.4ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultant pour le développement de la stratégie de gestion du paysage"], ["link", "http://www.mediacongo.net/emploi-societe-18350.html"], ["company_id", 53], ["place", "Lac Télé, Lac Tumba"], ["posted", "02.06.2016"]]
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultant pour le développement de la stratégie de gestion du paysage"], ["link", "http://www.mediacongo.net/emploi-societe-18350.html"], ["company_id", 53], ["place", "Lac Télé, Lac Tumba"], ["posted", "2016-06-02"], ["created_at", "2016-06-28 17:47:11.690202"], ["updated_at", "2016-06-28 17:47:11.690202"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36mCompany Load (3.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mJob Load (6.1ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18349.html"], ["company_id", 10], ["place", "Mbuji-Mayi et Kananga"], ["posted", "02.06.2016"]]
+  [1m[36m (3.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.3ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18349.html"], ["company_id", 10], ["place", "Mbuji-Mayi et Kananga"], ["posted", "2016-06-02"], ["created_at", "2016-06-28 17:47:11.733569"], ["updated_at", "2016-06-28 17:47:11.733569"]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (6.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mJob Load (6.7ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18348.html"], ["company_id", 10], ["place", "Kinshasa"], ["posted", "02.06.2016"]]
+  [1m[35m (8.3ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18348.html"], ["company_id", 10], ["place", "Kinshasa"], ["posted", "2016-06-02"], ["created_at", "2016-06-28 17:47:11.782816"], ["updated_at", "2016-06-28 17:47:11.782816"]]
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36mCompany Load (6.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mJob Load (3.8ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Consultant pour le développement de la stratégie de gestion du paysage"], ["link", "http://www.mediacongo.net/emploi-societe-18350.html"], ["company_id", 53], ["place", "Lac Télé, Lac Tumba"], ["posted", "02.06.2016"]]
+  [1m[36m (2.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Consultant pour le développement de la stratégie de gestion du paysage"], ["link", "http://www.mediacongo.net/emploi-societe-18350.html"], ["company_id", 53], ["place", "Lac Télé, Lac Tumba"], ["posted", "2016-06-02"], ["created_at", "2016-06-28 17:47:11.813743"], ["updated_at", "2016-06-28 17:47:11.813743"]]
+  [1m[36m (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mJob Load (10.2ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18348.html"], ["company_id", 10], ["place", "Kinshasa"], ["posted", "02.06.2016"]]
+  [1m[35m (8.5ms)[0m  BEGIN
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18348.html"], ["company_id", 10], ["place", "Kinshasa"], ["posted", "2016-06-02"], ["created_at", "2016-06-28 17:47:11.865962"], ["updated_at", "2016-06-28 17:47:11.865962"]]
+  [1m[35m (18.2ms)[0m  COMMIT
+  [1m[36mCompany Load (4.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "JSI/USAID"]]
+  [1m[35mJob Load (5.3ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Conseiller Provincial chargé du Suivi, Évaluation et Apprentissage (SEA)"], ["link", "http://www.mediacongo.net/emploi-societe-18361.html"], ["company_id", 29], ["place", "Kisangani"], ["posted", "03.06.2016"]]
+  [1m[36m (6.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Conseiller Provincial chargé du Suivi, Évaluation et Apprentissage (SEA)"], ["link", "http://www.mediacongo.net/emploi-societe-18361.html"], ["company_id", 29], ["place", "Kisangani"], ["posted", "2016-06-03"], ["created_at", "2016-06-28 17:47:11.919660"], ["updated_at", "2016-06-28 17:47:11.919660"]]
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "JSI/USAID"]]
+  [1m[36mJob Load (5.6ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Conseiller Provincial chargé du Suivi, Évaluation et Apprentissage (SEA)"], ["link", "http://www.mediacongo.net/emploi-societe-18361.html"], ["company_id", 29], ["place", "Kisangani"], ["posted", "03.06.2016"]]
+  [1m[35m (4.3ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Conseiller Provincial chargé du Suivi, Évaluation et Apprentissage (SEA)"], ["link", "http://www.mediacongo.net/emploi-societe-18361.html"], ["company_id", 29], ["place", "Kisangani"], ["posted", "2016-06-03"], ["created_at", "2016-06-28 17:47:11.959191"], ["updated_at", "2016-06-28 17:47:11.959191"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36mCompany Load (7.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mJob Load (2.0ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18371.html"], ["company_id", 6], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[36m (7.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18371.html"], ["company_id", 6], ["place", "Kinshasa"], ["posted", "2016-06-06"], ["created_at", "2016-06-28 17:47:11.989598"], ["updated_at", "2016-06-28 17:47:11.989598"]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (5.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Pact"]]
+  [1m[36mJob Load (1.2ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Assistant(e) chargé(e) de Mobilisation Communautaire"], ["link", "http://www.mediacongo.net/emploi-societe-18370.html"], ["company_id", 33], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[35m (2.7ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Assistant(e) chargé(e) de Mobilisation Communautaire"], ["link", "http://www.mediacongo.net/emploi-societe-18370.html"], ["company_id", 33], ["place", "Kinshasa"], ["posted", "2016-06-06"], ["created_at", "2016-06-28 17:47:12.020615"], ["updated_at", "2016-06-28 17:47:12.020615"]]
+  [1m[35m (9.1ms)[0m  COMMIT
+  [1m[36mCompany Load (3.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "BCECO"]]
+  [1m[35mJob Load (8.4ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Soixante-dix (70) opérateurs SIG pour les travaux cartographiques du RGPH2"], ["link", "http://www.mediacongo.net/emploi-societe-18369.html"], ["company_id", 5], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[36m (3.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Soixante-dix (70) opérateurs SIG pour les travaux cartographiques du RGPH2"], ["link", "http://www.mediacongo.net/emploi-societe-18369.html"], ["company_id", 5], ["place", "Kinshasa"], ["posted", "2016-06-06"], ["created_at", "2016-06-28 17:47:12.061773"], ["updated_at", "2016-06-28 17:47:12.061773"]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "World Vision"]]
+  [1m[36mJob Load (23.8ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultant chargé de la recherche sur le suivi de consommation du budget alloué à la santé au niveau communautaire en 2013, 2014 et 2015"], ["link", "http://www.mediacongo.net/emploi-societe-18368.html"], ["company_id", 51], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[35m (4.1ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultant chargé de la recherche sur le suivi de consommation du budget alloué à la santé au niveau communautaire en 2013, 2014 et 2015"], ["link", "http://www.mediacongo.net/emploi-societe-18368.html"], ["company_id", 51], ["place", "Kinshasa"], ["posted", "2016-06-06"], ["created_at", "2016-06-28 17:47:12.109426"], ["updated_at", "2016-06-28 17:47:12.109426"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mJob Load (0.9ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18371.html"], ["company_id", 6], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Pact"]]
+  [1m[35mJob Load (2.5ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Assistant(e) chargé(e) de Mobilisation Communautaire"], ["link", "http://www.mediacongo.net/emploi-societe-18370.html"], ["company_id", 33], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[36mCompany Load (1.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "BCECO"]]
+  [1m[35mJob Load (3.6ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Soixante-dix (70) opérateurs SIG pour les travaux cartographiques du RGPH2"], ["link", "http://www.mediacongo.net/emploi-societe-18369.html"], ["company_id", 5], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[36mCompany Load (1.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "World Vision"]]
+  [1m[35mJob Load (3.4ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Consultant chargé de la recherche sur le suivi de consommation du budget alloué à la santé au niveau communautaire en 2013, 2014 et 2015"], ["link", "http://www.mediacongo.net/emploi-societe-18368.html"], ["company_id", 51], ["place", "Kinshasa"], ["posted", "06.06.2016"]]
+  [1m[36mCompany Load (2.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Oxfam"]]
+  [1m[35mJob Load (0.9ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."posted" = $4 AND "jobs"."place" IS NULL LIMIT 1  [["description", "Consultant Genre, partenariat stratégique"], ["link", "http://www.mediacongo.net/emploi-societe-18367.html"], ["company_id", 32], ["posted", "06.06.2016"]]
+  [1m[36m (2.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["description", "Consultant Genre, partenariat stratégique"], ["link", "http://www.mediacongo.net/emploi-societe-18367.html"], ["company_id", 32], ["posted", "2016-06-06"], ["created_at", "2016-06-28 17:47:12.165472"], ["updated_at", "2016-06-28 17:47:12.165472"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PNUD"]]
+  [1m[36mJob Load (1.4ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultant(e)s (Un international et Un national) afin de réaliser l’étude diagnostique sur les systèmes et les capacités nationales en matière de suivi-évaluation"], ["link", "http://www.mediacongo.net/emploi-societe-18374.html"], ["company_id", 36], ["place", "Kinshasa"], ["posted", "07.06.2016"]]
+  [1m[35m (3.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultant(e)s (Un international et Un national) afin de réaliser l’étude diagnostique sur les systèmes et les capacités nationales en matière de suivi-évaluation"], ["link", "http://www.mediacongo.net/emploi-societe-18374.html"], ["company_id", 36], ["place", "Kinshasa"], ["posted", "2016-06-07"], ["created_at", "2016-06-28 17:47:12.185437"], ["updated_at", "2016-06-28 17:47:12.185437"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mJob Load (1.6ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chef de département crédit"], ["link", "http://www.mediacongo.net/emploi-societe-18373.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "07.06.2016"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chef de département crédit"], ["link", "http://www.mediacongo.net/emploi-societe-18373.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "2016-06-07"], ["created_at", "2016-06-28 17:47:12.195134"], ["updated_at", "2016-06-28 17:47:12.195134"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "PNUD"]]
+  [1m[36mJob Load (28.1ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultant(e)s (Un international et Un national) afin de réaliser l’étude diagnostique sur les systèmes et les capacités nationales en matière de suivi-évaluation"], ["link", "http://www.mediacongo.net/emploi-societe-18374.html"], ["company_id", 36], ["place", "Kinshasa"], ["posted", "07.06.2016"]]
+  [1m[35m (7.5ms)[0m  BEGIN
+  [1m[36mSQL (14.6ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultant(e)s (Un international et Un national) afin de réaliser l’étude diagnostique sur les systèmes et les capacités nationales en matière de suivi-évaluation"], ["link", "http://www.mediacongo.net/emploi-societe-18374.html"], ["company_id", 36], ["place", "Kinshasa"], ["posted", "2016-06-07"], ["created_at", "2016-06-28 17:47:12.245595"], ["updated_at", "2016-06-28 17:47:12.245595"]]
+  [1m[35m (14.9ms)[0m  COMMIT
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mJob Load (8.0ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chef de département crédit"], ["link", "http://www.mediacongo.net/emploi-societe-18373.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "07.06.2016"]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chef de département crédit"], ["link", "http://www.mediacongo.net/emploi-societe-18373.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "2016-06-07"], ["created_at", "2016-06-28 17:47:12.324022"], ["updated_at", "2016-06-28 17:47:12.324022"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mJob Load (3.3ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Chef de projet"], ["link", "http://www.mediacongo.net/emploi-societe-18386.html"], ["company_id", 53], ["place", "Mushie (Maï-Ndombe)"], ["posted", "08.06.2016"]]
+  [1m[35m (3.0ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Chef de projet"], ["link", "http://www.mediacongo.net/emploi-societe-18386.html"], ["company_id", 53], ["place", "Mushie (Maï-Ndombe)"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.345853"], ["updated_at", "2016-06-28 17:47:12.345853"]]
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36mCompany Load (0.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Trocaire"]]
+  [1m[35mJob Load (5.3ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Consultance sur l'égalité des sexes dans les communautés polygamiques"], ["link", "http://www.mediacongo.net/emploi-societe-18385.html"], ["company_id", 43], ["place", "Bunia"], ["posted", "08.06.2016"]]
+  [1m[36m (2.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Consultance sur l'égalité des sexes dans les communautés polygamiques"], ["link", "http://www.mediacongo.net/emploi-societe-18385.html"], ["company_id", 43], ["place", "Bunia"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.370026"], ["updated_at", "2016-06-28 17:47:12.370026"]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (9.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mJob Load (7.0ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Agent du contrôle interne"], ["link", "http://www.mediacongo.net/emploi-societe-18384.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "08.06.2016"]]
+  [1m[35m (7.0ms)[0m  BEGIN
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Agent du contrôle interne"], ["link", "http://www.mediacongo.net/emploi-societe-18384.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.418109"], ["updated_at", "2016-06-28 17:47:12.418109"]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mCompany Load (5.8ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mJob Load (5.5ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Agent de recouvrement légal - crédit siège"], ["link", "http://www.mediacongo.net/emploi-societe-18383.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "08.06.2016"]]
+  [1m[36m (3.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.5ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Agent de recouvrement légal - crédit siège"], ["link", "http://www.mediacongo.net/emploi-societe-18383.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.451172"], ["updated_at", "2016-06-28 17:47:12.451172"]]
+  [1m[36m (7.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "SNV"]]
+  [1m[36mJob Load (6.4ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Country Director DRC"], ["link", "http://www.mediacongo.net/emploi-societe-18382.html"], ["company_id", 40], ["place", "Kinshasa"], ["posted", "08.06.2016"]]
+  [1m[35m (2.3ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Country Director DRC"], ["link", "http://www.mediacongo.net/emploi-societe-18382.html"], ["company_id", 40], ["place", "Kinshasa"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.489748"], ["updated_at", "2016-06-28 17:47:12.489748"]]
+  [1m[35m (4.8ms)[0m  COMMIT
+  [1m[36mCompany Load (7.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "WWF"]]
+  [1m[35mJob Load (2.8ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chef de projet"], ["link", "http://www.mediacongo.net/emploi-societe-18386.html"], ["company_id", 53], ["place", "Mushie (Maï-Ndombe)"], ["posted", "08.06.2016"]]
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.3ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chef de projet"], ["link", "http://www.mediacongo.net/emploi-societe-18386.html"], ["company_id", 53], ["place", "Mushie (Maï-Ndombe)"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.519818"], ["updated_at", "2016-06-28 17:47:12.519818"]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (7.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Trocaire"]]
+  [1m[36mJob Load (1.4ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Consultance sur l'égalité des sexes dans les communautés polygamiques"], ["link", "http://www.mediacongo.net/emploi-societe-18385.html"], ["company_id", 43], ["place", "Bunia"], ["posted", "08.06.2016"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (8.3ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Consultance sur l'égalité des sexes dans les communautés polygamiques"], ["link", "http://www.mediacongo.net/emploi-societe-18385.html"], ["company_id", 43], ["place", "Bunia"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.566553"], ["updated_at", "2016-06-28 17:47:12.566553"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36mCompany Load (2.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "i-Finance"]]
+  [1m[35mJob Load (1.5ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Agent du contrôle interne"], ["link", "http://www.mediacongo.net/emploi-societe-18384.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "08.06.2016"]]
+  [1m[36m (2.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Agent du contrôle interne"], ["link", "http://www.mediacongo.net/emploi-societe-18384.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.594235"], ["updated_at", "2016-06-28 17:47:12.594235"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "i-Finance"]]
+  [1m[36mJob Load (3.7ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Agent de recouvrement légal - crédit siège"], ["link", "http://www.mediacongo.net/emploi-societe-18383.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "08.06.2016"]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Agent de recouvrement légal - crédit siège"], ["link", "http://www.mediacongo.net/emploi-societe-18383.html"], ["company_id", 22], ["place", "Kinshasa"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.628628"], ["updated_at", "2016-06-28 17:47:12.628628"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36mCompany Load (19.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "SNV"]]
+  [1m[35mJob Load (2.5ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Country Director DRC"], ["link", "http://www.mediacongo.net/emploi-societe-18382.html"], ["company_id", 40], ["place", "Kinshasa"], ["posted", "08.06.2016"]]
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Country Director DRC"], ["link", "http://www.mediacongo.net/emploi-societe-18382.html"], ["company_id", 40], ["place", "Kinshasa"], ["posted", "2016-06-08"], ["created_at", "2016-06-28 17:47:12.708605"], ["updated_at", "2016-06-28 17:47:12.708605"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (6.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mJob Load (5.8ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Comptable Inventaire"], ["link", "http://www.mediacongo.net/emploi-societe-18399.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (11.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Comptable Inventaire"], ["link", "http://www.mediacongo.net/emploi-societe-18399.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.762080"], ["updated_at", "2016-06-28 17:47:12.762080"]]
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mCompany Load (1.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mJob Load (3.8ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Inventory Accounting Manager"], ["link", "http://www.mediacongo.net/emploi-societe-18398.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Inventory Accounting Manager"], ["link", "http://www.mediacongo.net/emploi-societe-18398.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.779647"], ["updated_at", "2016-06-28 17:47:12.779647"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mJob Load (0.7ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Inventory Senior Accountant"], ["link", "http://www.mediacongo.net/emploi-societe-18397.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Inventory Senior Accountant"], ["link", "http://www.mediacongo.net/emploi-societe-18397.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.792085"], ["updated_at", "2016-06-28 17:47:12.792085"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36mCompany Load (4.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mJob Load (6.8ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Pharmacien Coordonnateur Contrôle Qualité et Reconditionnement"], ["link", "http://www.mediacongo.net/emploi-societe-18396.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Pharmacien Coordonnateur Contrôle Qualité et Reconditionnement"], ["link", "http://www.mediacongo.net/emploi-societe-18396.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.816857"], ["updated_at", "2016-06-28 17:47:12.816857"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (5.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Handicap International"]]
+  [1m[36mJob Load (0.8ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Chef de Projet Education Inclusive"], ["link", "http://www.mediacongo.net/emploi-societe-18395.html"], ["company_id", 20], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Chef de Projet Education Inclusive"], ["link", "http://www.mediacongo.net/emploi-societe-18395.html"], ["company_id", 20], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.837555"], ["updated_at", "2016-06-28 17:47:12.837555"]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36mCompany Load (1.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mJob Load (2.2ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Spécialiste Provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18394.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "09.06.2016"]]
+  [1m[36m (8.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (27.3ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Spécialiste Provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18394.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.868171"], ["updated_at", "2016-06-28 17:47:12.868171"]]
+  [1m[36m (7.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mJob Load (9.9ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Spécialiste Provincial en Gouvernance"], ["link", "http://www.mediacongo.net/emploi-societe-18393.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "09.06.2016"]]
+  [1m[35m (1.6ms)[0m  BEGIN
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Spécialiste Provincial en Gouvernance"], ["link", "http://www.mediacongo.net/emploi-societe-18393.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.928296"], ["updated_at", "2016-06-28 17:47:12.928296"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mCompany Load (4.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mJob Load (1.7ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chef d’équipe provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18392.html"], ["company_id", 6], ["place", "Kananga"], ["posted", "09.06.2016"]]
+  [1m[36m (7.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chef d’équipe provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18392.html"], ["company_id", 6], ["place", "Kananga"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.961568"], ["updated_at", "2016-06-28 17:47:12.961568"]]
+  [1m[36m (9.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "EGPAF"]]
+  [1m[36mJob Load (0.9ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Administration Officer"], ["link", "http://www.mediacongo.net/emploi-societe-18391.html"], ["company_id", 15], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (3.2ms)[0m  BEGIN
+  [1m[36mSQL (6.5ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Administration Officer"], ["link", "http://www.mediacongo.net/emploi-societe-18391.html"], ["company_id", 15], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:12.985501"], ["updated_at", "2016-06-28 17:47:12.985501"]]
+  [1m[35m (7.1ms)[0m  COMMIT
+  [1m[36mCompany Load (3.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Inades"]]
+  [1m[35mJob Load (2.0ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chargé de programme"], ["link", "http://www.mediacongo.net/emploi-societe-18389.html"], ["company_id", 26], ["place", "Kikwit"], ["posted", "09.06.2016"]]
+  [1m[36m (4.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.7ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chargé de programme"], ["link", "http://www.mediacongo.net/emploi-societe-18389.html"], ["company_id", 26], ["place", "Kikwit"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.018728"], ["updated_at", "2016-06-28 17:47:13.018728"]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (2.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mJob Load (3.9ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Comptable Inventaire"], ["link", "http://www.mediacongo.net/emploi-societe-18399.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (5.8ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Comptable Inventaire"], ["link", "http://www.mediacongo.net/emploi-societe-18399.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.060828"], ["updated_at", "2016-06-28 17:47:13.060828"]]
+  [1m[35m (5.4ms)[0m  COMMIT
+  [1m[36mCompany Load (6.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mJob Load (10.1ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Inventory Accounting Manager"], ["link", "http://www.mediacongo.net/emploi-societe-18398.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Inventory Accounting Manager"], ["link", "http://www.mediacongo.net/emploi-societe-18398.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.104314"], ["updated_at", "2016-06-28 17:47:13.104314"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "ASF/PSI"]]
+  [1m[36mJob Load (0.9ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Inventory Senior Accountant"], ["link", "http://www.mediacongo.net/emploi-societe-18397.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (2.3ms)[0m  BEGIN
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Inventory Senior Accountant"], ["link", "http://www.mediacongo.net/emploi-societe-18397.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.149011"], ["updated_at", "2016-06-28 17:47:13.149011"]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mCompany Load (2.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "ASF/PSI"]]
+  [1m[35mJob Load (1.3ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Pharmacien Coordonnateur Contrôle Qualité et Reconditionnement"], ["link", "http://www.mediacongo.net/emploi-societe-18396.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[36m (11.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Pharmacien Coordonnateur Contrôle Qualité et Reconditionnement"], ["link", "http://www.mediacongo.net/emploi-societe-18396.html"], ["company_id", 3], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.189396"], ["updated_at", "2016-06-28 17:47:13.189396"]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (1.7ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Handicap International"]]
+  [1m[36mJob Load (4.5ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Chef de Projet Education Inclusive"], ["link", "http://www.mediacongo.net/emploi-societe-18395.html"], ["company_id", 20], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (6.9ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Chef de Projet Education Inclusive"], ["link", "http://www.mediacongo.net/emploi-societe-18395.html"], ["company_id", 20], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.213797"], ["updated_at", "2016-06-28 17:47:13.213797"]]
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36mCompany Load (3.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mJob Load (5.8ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Spécialiste Provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18394.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "09.06.2016"]]
+  [1m[36m (3.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Spécialiste Provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18394.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.258315"], ["updated_at", "2016-06-28 17:47:13.258315"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (4.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Cambridge Education"]]
+  [1m[36mJob Load (18.5ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Spécialiste Provincial en Gouvernance"], ["link", "http://www.mediacongo.net/emploi-societe-18393.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "09.06.2016"]]
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mSQL (7.8ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Spécialiste Provincial en Gouvernance"], ["link", "http://www.mediacongo.net/emploi-societe-18393.html"], ["company_id", 6], ["place", "Kananga ou Lubumbashi"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.305496"], ["updated_at", "2016-06-28 17:47:13.305496"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36mCompany Load (1.9ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Cambridge Education"]]
+  [1m[35mJob Load (6.0ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chef d’équipe provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18392.html"], ["company_id", 6], ["place", "Kananga"], ["posted", "09.06.2016"]]
+  [1m[36m (3.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chef d’équipe provincial"], ["link", "http://www.mediacongo.net/emploi-societe-18392.html"], ["company_id", 6], ["place", "Kananga"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.345515"], ["updated_at", "2016-06-28 17:47:13.345515"]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.8ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "EGPAF"]]
+  [1m[36mJob Load (37.6ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Administration Officer"], ["link", "http://www.mediacongo.net/emploi-societe-18391.html"], ["company_id", 15], ["place", "Kinshasa"], ["posted", "09.06.2016"]]
+  [1m[35m (12.5ms)[0m  BEGIN
+  [1m[36mSQL (15.7ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Administration Officer"], ["link", "http://www.mediacongo.net/emploi-societe-18391.html"], ["company_id", 15], ["place", "Kinshasa"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.441581"], ["updated_at", "2016-06-28 17:47:13.441581"]]
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36mCompany Load (10.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Inades"]]
+  [1m[35mJob Load (8.5ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Chargé de programme"], ["link", "http://www.mediacongo.net/emploi-societe-18389.html"], ["company_id", 26], ["place", "Kikwit"], ["posted", "09.06.2016"]]
+  [1m[36m (10.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Chargé de programme"], ["link", "http://www.mediacongo.net/emploi-societe-18389.html"], ["company_id", 26], ["place", "Kikwit"], ["posted", "2016-06-09"], ["created_at", "2016-06-28 17:47:13.495129"], ["updated_at", "2016-06-28 17:47:13.495129"]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "HPP-Congo"]]
+  [1m[36mJob Load (3.8ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Notice offer"], ["link", "http://www.mediacongo.net/emploi-societe-18405.html"], ["company_id", 21], ["place", "Kinshasa"], ["posted", "10.06.2016"]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (7.6ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Notice offer"], ["link", "http://www.mediacongo.net/emploi-societe-18405.html"], ["company_id", 21], ["place", "Kinshasa"], ["posted", "2016-06-10"], ["created_at", "2016-06-28 17:47:13.558989"], ["updated_at", "2016-06-28 17:47:13.558989"]]
+  [1m[35m (7.1ms)[0m  COMMIT
+  [1m[36mCompany Load (3.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mJob Load (2.1ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18403.html"], ["company_id", 10], ["place", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"], ["posted", "10.06.2016"]]
+  [1m[36m (7.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18403.html"], ["company_id", 10], ["place", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"], ["posted", "2016-06-10"], ["created_at", "2016-06-28 17:47:13.593647"], ["updated_at", "2016-06-28 17:47:13.593647"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mJob Load (3.6ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18401.html"], ["company_id", 10], ["place", "Lubumbashi"], ["posted", "10.06.2016"]]
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18401.html"], ["company_id", 10], ["place", "Lubumbashi"], ["posted", "2016-06-10"], ["created_at", "2016-06-28 17:47:13.615122"], ["updated_at", "2016-06-28 17:47:13.615122"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36mCompany Load (7.7ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "HPP-Congo"]]
+  [1m[35mJob Load (3.4ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Notice offer"], ["link", "http://www.mediacongo.net/emploi-societe-18405.html"], ["company_id", 21], ["place", "Kinshasa"], ["posted", "10.06.2016"]]
+  [1m[36m (6.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Notice offer"], ["link", "http://www.mediacongo.net/emploi-societe-18405.html"], ["company_id", 21], ["place", "Kinshasa"], ["posted", "2016-06-10"], ["created_at", "2016-06-28 17:47:13.649669"], ["updated_at", "2016-06-28 17:47:13.649669"]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "Chemonics"]]
+  [1m[36mJob Load (6.7ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18403.html"], ["company_id", 10], ["place", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"], ["posted", "10.06.2016"]]
+  [1m[35m (7.0ms)[0m  BEGIN
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18403.html"], ["company_id", 10], ["place", "Kasaï-Oriental, Kasaï-Central, Haut Katanga, Nord-Kivu, Sud-Kivu et Equateur"], ["posted", "2016-06-10"], ["created_at", "2016-06-28 17:47:13.681523"], ["updated_at", "2016-06-28 17:47:13.681523"]]
+  [1m[35m (8.5ms)[0m  COMMIT
+  [1m[36mCompany Load (6.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1[0m  [["name", "Chemonics"]]
+  [1m[35mJob Load (0.8ms)[0m  SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18401.html"], ["company_id", 10], ["place", "Lubumbashi"], ["posted", "10.06.2016"]]
+  [1m[36m (4.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "jobs" ("description", "link", "company_id", "place", "posted", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["description", "Plusieurs postes"], ["link", "http://www.mediacongo.net/emploi-societe-18401.html"], ["company_id", 10], ["place", "Lubumbashi"], ["posted", "2016-06-10"], ["created_at", "2016-06-28 17:47:13.713723"], ["updated_at", "2016-06-28 17:47:13.713723"]]
+  [1m[36m (14.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCompany Load (3.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT 1  [["name", "WWF"]]
+  [1m[36mJob Load (1.5ms)[0m  [1mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1[0m  [["description", "Landscape Rural Development Manager"], ["link", "http://www.mediacongo.net/emploi-societe-18407.html"], ["company_id", 53], ["place", "Salonga"], ["posted", "13.06.2016"]]
+rake aborted!
+ActiveRecord::StatementInvalid: PG::DatetimeFieldOverflow: ERROR:  date/time field value out of range: "13.06.2016"
+HINT:  Perhaps you need a different "datestyle" setting.
+: SELECT  "jobs".* FROM "jobs" WHERE "jobs"."description" = $1 AND "jobs"."link" = $2 AND "jobs"."company_id" = $3 AND "jobs"."place" = $4 AND "jobs"."posted" = $5 LIMIT 1
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:602:in `exec_prepared'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:602:in `block in exec_cache'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:601:in `exec_cache'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:585:in `execute_and_clear'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:160:in `exec_query'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:356:in `select'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:32:in `select_all'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/query_cache.rb:70:in `select_all'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/querying.rb:39:in `find_by_sql'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:639:in `exec_queries'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:515:in `load'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:243:in `to_a'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation/finder_methods.rb:475:in `find_take'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation/finder_methods.rb:105:in `take'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation/finder_methods.rb:84:in `find_by'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:213:in `find_or_create_by'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/querying.rb:6:in `find_or_create_by'
+/app/db/seeds.rb:18:in `block in <top (required)>'
+/app/db/seeds.rb:16:in `<top (required)>'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:268:in `load'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:268:in `block in load'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:268:in `load'
+/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/engine.rb:547:in `load_seed'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/tasks/database_tasks.rb:250:in `load_seed'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/railties/databases.rake:183:in `block (2 levels) in <top (required)>'
+/app/vendor/bundle/ruby/2.2.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+PG::DatetimeFieldOverflow: ERROR:  date/time field value out of range: "13.06.2016"
+HINT:  Perhaps you need a different "datestyle" setting.
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:602:in `exec_prepared'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:602:in `block in exec_cache'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:601:in `exec_cache'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql_adapter.rb:585:in `execute_and_clear'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:160:in `exec_query'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:356:in `select'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:32:in `select_all'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/query_cache.rb:70:in `select_all'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/querying.rb:39:in `find_by_sql'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:639:in `exec_queries'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:515:in `load'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:243:in `to_a'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation/finder_methods.rb:475:in `find_take'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation/finder_methods.rb:105:in `take'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation/finder_methods.rb:84:in `find_by'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/relation.rb:213:in `find_or_create_by'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/querying.rb:6:in `find_or_create_by'
+/app/db/seeds.rb:18:in `block in <top (required)>'
+/app/db/seeds.rb:16:in `<top (required)>'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:268:in `load'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:268:in `block in load'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+/app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:268:in `load'
+/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/engine.rb:547:in `load_seed'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/tasks/database_tasks.rb:250:in `load_seed'
+/app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/railties/databases.rake:183:in `block (2 levels) in <top (required)>'
+/app/vendor/bundle/ruby/2.2.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+Tasks: TOP => db:seed
+(See full trace by running task with --trace)
