@@ -9,8 +9,7 @@ class JobController < ApplicationController
     require 'open-uri'
 
     @job = Job.find(params[:id])
-    # links =
-   
+    
 
     html_data = open("#{@job.link}").read
     nokogiri_object = Nokogiri::HTML(html_data)

@@ -6,10 +6,7 @@ class CompaniesController < ApplicationController
 
   def show
   	@company = Company.find(params[:id])
-  	# company = @company.pluck(:id)
-  	# user = User.find(current_user.id)
-  	# following = user.follow(company)
-  	@jobs = Job.where(:company_id => params[:id])
+  	@jobs = Job.where(:company_id => params[:id]).order(posted: :desc) 
   	
   end
 
