@@ -35,10 +35,10 @@
             %ul.dropdown-menu{"aria-labelledby" => "dLabel"}
               %li
 
-                %a.btn.btn-twitter{:href => "http://twitter.com/home?status=SHAREMESSAGE", :target => "_blank", :title => "find this job #{job.description} @ www.musala.herokuapp/job/#{job.id}"}
+                %a.btn.btn-twitter{:href => "http://twitter.com/home?status=Check out this job offer: #{job.description} From #{job.company.name} @ https://musala.herokuapp.com//job/#{job.id}", :target => "_blank", :title => "Share on Twitter"}
                   %i.fa.fa-twitter
                     Twitter
               %li 
-                %a.btn.btn-facebook{:href => "https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE", :target => "_blank", :title => "find this job #{job.description} @ www.musala.herokuapp/job/#{job.id}"}
+                %a.btn.btn-facebook{:href => "https://www.facebook.com/sharer/sharer.php?u= Check out this job offer: #{job.description} From #{job.company.name} @ https://musala.herokuapp.com//job/#{job.id}", :target => "_blank", :title => "Share on Facebook"}
                   %i.fa.fa-facebook
                     facebook
