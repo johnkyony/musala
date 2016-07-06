@@ -8,35 +8,41 @@
           %li.divider
           
     
-
-.container    
+.container
   .row
     .col-lg-12
       %h3 Latest Jobs
       %hr
-  
+
   / Page Features
-  .row.text-center
-    - @jobs.each do |job|
-      .col-md-4.col-sm-6.hero-feature
-        .thumbnail
-          
-          .caption
-            %h3= job.description
-            %h4= job.company.name
-            %h5= job.posted
-            %p.glyphicon.glyphicon-map-marker= job.place
-            %p
-              - if user_signed_in?
-                = link_to "View More" , job_path(job) , class: "btn btn-primary"
-                - if current_user.likes?(job)
-                  = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
-                - else 
-                  = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"                
-              - else 
-                = link_to "View More" , new_user_session_path , class: "btn btn-primary"
-                = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
+  .container
+    .row
+      - @jobs.each do |job|
+        .col-md-12
+          .comments-list
+            .media
+              %p.pull-right
+                %small= job.posted
               
-    
-    
-  
+              .media-body
+                %h2.media-heading= job.company.name
+                %h4= job.description
+                %p
+                  %small
+                    %p.glyphicon.glyphicon-map-marker= job.place
+                %p.pull-right
+                  - if user_signed_in?
+                    = link_to "View More" , job_path(job) , class: "btn btn-primary"              
+
+
+                    - if current_user.likes?(job)
+                      = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+                    - else 
+                      = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+
+                  - else 
+                    = link_to "View More" , new_user_session_path , class: "btn btn-primary"
+                    = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
+
+          
+          

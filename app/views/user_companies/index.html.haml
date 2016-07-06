@@ -1,31 +1,28 @@
 - if @my_companies.blank?
   %p You have currently not followed any company please click link and follow a company 
-  = link_to 'Companies' , companies_path
+  = link_to 'Companies' , companies_path, class: "btn btn-default" 
 - else
 
   .container
+    .col-lg-12
     .row
       .col-lg-12
         %h3 Following Companies
         %hr
     .col-lg-12
-      .row
-        %ul.thumbnails
-          - @my_companies.each do |company|
-            .col-md-12
-              .thumbnail
-                / %img.img-responsive{:alt => "ALT NAME", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
-                .caption
-                  %h2= company.name
-                  
-                  
+      %ul.thumbnails
+        - @my_companies.each do |company|
+          .col-md-6
+            .thumbnail
+              / %img.img-responsive{:alt => "ALT NAME", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
+              .caption
+                %h2= company.name
+                
+                
 
-                  %p{:align => "center"}
-                    
-                    = link_to "View Jobs" , company_path(company) , class: "btn btn-primary"
-                    -  if current_user.follows?(company)
-                      = link_to "Unfollow" , unfollow_company_path(company) , class: "btn btn-default"
-                    - else 
-                      = link_to "Follow" , follow_company_path(company) , class: "btn btn-default"
-                      
-      
+                %p{:align => "center"}
+                  
+                  = link_to "View Jobs" , company_path(company) , class: "btn btn-primary "
+                  
+                  = link_to "Unfollow" , unfollow_company_path(company) , class: "btn btn-default"
+                 

@@ -8,5 +8,6 @@ class LocationsController < ApplicationController
   	@location = Location.all
   	location = Location.find(params[:id])
   	@jobs = Job.where(:place => location.name).order(posted: :desc) 
+  	@location_name = location.name
   end
 end

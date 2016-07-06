@@ -1,28 +1,43 @@
-.container
-  .row
-    .col-lg-12
-      %h3 Liked Jobs
-      %hr
-  .row
-    %ul.thumbnails
-      - @my_jobs.each do |job|
-        .col-md-4
-          .thumbnail
-            / %img.img-responsive{:alt => "ALT NAME", :src => "http://www.pptgrounds.com/wp-content/uploads/2013/02/Computer-Work-Desktop-Backgrounds.jpg"}/
-            .caption
-              %h2= job.description
-              %h3= job.company.name
-              %h4= job.posted
+- if @my_jobs.blank?
+  %p You have currently not followed any company please click link and follow a company 
+  = link_to 'Jobs' , job_index_path , class: "btn btn-default" 
+- else
+ 
+ 
+  .container
+    .row
+      .col-lg-12
+        %h3 Liked Jobs
+        %hr
+    .row
+      -  @my_jobs.each do |job|
+        .col-md-12
+          .comments-list
+            .media
+              %p.pull-right
+                %small= job.posted
               
-              %p.glyphicon.glyphicon-map-marker= job.place
+              .media-body
+                %h2.media-heading= job.company.name
+                %h4= job.description
+                %p
+                  %small
+                    %p.glyphicon.glyphicon-map-marker= job.place
+                %p.pull-right
+                  - if user_signed_in?
+                    = link_to "View More" , job_path(job) , class: "btn btn-primary"              
 
-              %p{:align => "center"}
-               
-                = link_to "View More" , job_path(job) , class: "btn btn-primary "
-                - if current_user.likes?(job)
-                  = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
-                - else 
-                  = link_to "Like" ,  like_job_path(job) , class: "btn btn-default" 
-                 
-                 
-  
+
+                    - if current_user.likes?(job)
+                      = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+                    - else 
+                      = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+
+                  - else 
+                    = link_to "View More" , new_user_session_path , class: "btn btn-primary"
+                    = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
+
+          
+                          
+                   
+    

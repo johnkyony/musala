@@ -1,40 +1,41 @@
-%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}/
-.container
-  .fb-profile
-    %img.fb-image-lg{:align => "left", :alt => "Profile image example", :src => "https://betagrowth.files.wordpress.com/2015/06/office-desk-background-2.jpg"}/
-    %img.fb-image-profile.thumbnail{:align => "left", :alt => "Profile image example", :src => "http://i.imgur.com/GaIFIFB.jpg"}/
-    .fb-profile-text
-      %h1= @company.name
-     
-      
 
-
+  
 
 .container
-    
   .row
-    .col-lg-12
-      %h3 Latest Jobs
-      %hr
-  
-  / Page Features
-  .row.text-center
-    - @jobs.each do |job|
-      .col-md-4.col-sm-6.hero-feature
-        .thumbnail
+
+    .col-sm-3.col-sm-offset-1.blog-sidebar
+      .sidebar-module.sidebar-module-inset
+        %h3= @company.name
+        = link_to "Back" , companies_path , class: "btn btn-primary  btn-block"
+    .col-md-8  
+      - @jobs.each do |job|
+        .col-md-8
+          .comments-list
+            .media
+              %p.pull-right
+                %small= job.posted
+              
+              .media-body
+                %h4.media-heading= job.description
+                
+                %p
+
+                  %p.glyphicon.glyphicon-map-marker= job.place
+                %p.pull-right
+                  - if user_signed_in?
+                    = link_to "View More" , job_path(job) , class: "btn btn-primary"              
+
+
+                    - if current_user.likes?(job)
+                      = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+                    - else 
+                      = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+
+                  - else 
+                    = link_to "View More" , new_user_session_path , class: "btn btn-primary"
+                    = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
+        %br
+
           
-          .caption
-            %h3= job.description
-            %h4= job.company.name
-            %h5= job.posted
-            %p.glyphicon.glyphicon-map-marker= job.place
-            %p
-            
-              = link_to "View More" , job_path(job) , class: "btn btn-primary"
-              - if current_user.likes?(job)
-                = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
-              - else 
-                = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"    
-             
-  
-  
+          

@@ -4,41 +4,34 @@
     %hr
 
 / Page Features
-.row.text-center
-  .col-lg-12
+.container
+  .row
     - @jobs.each do |job|
-      .col-md-4.col-sm-6.hero-feature
-        .thumbnail
-          
-          .caption
-            %h4= job.description
-            %h5= job.company.name
-            %h6= job.posted
-            %p.glyphicon.glyphicon-map-marker= job.place
-            %p
-              - if user_signed_in?
-                = link_to "View More" , job_path(job) , class: "btn btn-primary"              
+      .col-md-12
+        .comments-list
+          .media
+            %p.pull-right
+              %small= job.posted
+            
+            .media-body
+              %h2.media-heading= job.company.name
+              %h4= job.description
+              %p
+                %small
+                  %p.glyphicon.glyphicon-map-marker= job.place
+              %p.pull-right
+                - if user_signed_in?
+                  = link_to "View More" , job_path(job) , class: "btn btn-primary"              
 
-  
-                - if current_user.likes?(job)
-                  = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+
+                  - if current_user.likes?(job)
+                    = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
+                  - else 
+                    = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+
                 - else 
-                  = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
+                  = link_to "View More" , new_user_session_path , class: "btn btn-primary"
+                  = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
 
-              - else 
-                = link_to "View More" , new_user_session_path , class: "btn btn-primary"
-                = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
-          .dropdown
-            %a.btn.btn-primary#dLabel{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
-              Share
-              %span.caret
-            %ul.dropdown-menu{"aria-labelledby" => "dLabel"}
-              %li
-
-                %a.btn.btn-twitter{:href => "http://twitter.com/home?status=Check out this job offer: #{job.description} From #{job.company.name} @ https://musala.herokuapp.com/job/#{job.id}", :target => "_blank", :title => "Share on Twitter"}
-                  %i.fa.fa-twitter
-                    Twitter
-              %li 
-                %a.btn.btn-facebook{:href => "https://www.facebook.com/sharer/sharer.php?u=Check out this job offer: #{job.description} From #{job.company.name} @ https://musala.herokuapp.com/job/#{job.id}", :target => "_blank", :title => "Share on Facebook"}
-                  %i.fa.fa-facebook
-                    facebook
+        
+        
