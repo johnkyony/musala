@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'badges/index'
+
   get 'locations/index'
 
   get 'locations/show'
