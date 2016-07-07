@@ -1,18 +1,18 @@
 require 'csv'
 
 
-Company.delete_all
+# Company.delete_all
 CSV.foreach(Rails.root.join("db/seeds_data/companies_database.csv"), headers: true) do |row|
  Company.find_or_create_by(name: row[0])
 end
 
-Location.delete_all
+# Location.delete_all
 CSV.foreach(Rails.root.join("db/seeds_data/location.csv"), headers: true) do |row|
 Location.find_or_create_by(name: row[0])
 end
 
 
-Job.delete_all
+# Job.delete_all
 CSV.foreach(Rails.root.join("db/seeds_data/Job_database.csv"), headers: true) do |row|
   company = Company.find_by name: row[2]
 
