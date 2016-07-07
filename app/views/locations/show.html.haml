@@ -1,6 +1,3 @@
-
-    
-
 .container
   .row
 
@@ -8,6 +5,16 @@
       .sidebar-module.sidebar-module-inset
         %h3= @location_name
         = link_to "Back" , locations_path , class: "btn btn-primary btn-block"
+      .sidebar-module
+        %h4 Locations
+        %ol.list-unstyled.nav.nav-pills
+          - @location.each do |location|
+            %li{:role => "presentation"}
+              = link_to "#{location.name}" , location_path(location)
+            %li.divider
+         
+        
+
     .col-md-8  
       - @jobs.each do |job|
         .col-md-12

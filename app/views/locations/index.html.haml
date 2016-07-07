@@ -1,48 +1,43 @@
-.container    
-  .row
-    .col-lg-12
-      %ul.nav.nav-pills
-        - @location.each do |location|
-          %li{:role => "presentation"}
-            = link_to "#{location.name}" , location_path(location)
-          %li.divider
-          
-    
+
 .container
   .row
-    .col-lg-12
-      %h3 Latest Jobs
-      %hr
 
-  / Page Features
-  .container
-    .row
-      - @jobs.each do |job|
-        .col-md-12
-          .comments-list
-            .media
+    .col-sm-3.col-sm-offset-1.blog-sidebar
+      
+      .sidebar-module
+        %h1 Locations
+        %ol.list-unstyled.nav.nav-pills
+          - @location.each do |location|
+            %li{:role => "presentation"}
+              = link_to "#{location.name}" , location_path(location)
+            %li.divider
+
+    .col-md-8
+      - @jobs.each do |job|      
+        .comments-list
+          .media
+            %p.pull-right
+              %small= job.posted
+            
+            .media-body
+              %h2.media-heading= job.company.name
+              %h4= job.description
+              %p
+                %small
+                  %p.glyphicon.glyphicon-map-marker= job.place
               %p.pull-right
-                %small= job.posted
-              
-              .media-body
-                %h2.media-heading= job.company.name
-                %h4= job.description
-                %p
-                  %small
-                    %p.glyphicon.glyphicon-map-marker= job.place
-                %p.pull-right
-                  - if user_signed_in?
-                    = link_to "View More" , job_path(job) , class: "btn btn-primary"              
+                - if user_signed_in?
+                  = link_to "View More" , job_path(job) , class: "btn btn-primary"              
 
 
-                    - if current_user.likes?(job)
-                      = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
-                    - else 
-                      = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
-
+                  - if current_user.likes?(job)
+                    = link_to "Dislike" ,  dislike_job_path(job) , class: "btn btn-default"
                   - else 
-                    = link_to "View More" , new_user_session_path , class: "btn btn-primary"
-                    = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
+                    = link_to "Like" ,  like_job_path(job) , class: "btn btn-default"
 
-          
-          
+                - else 
+                  = link_to "View More" , new_user_session_path , class: "btn btn-primary"
+                  = link_to "Like" ,  new_user_session_path , class: "btn btn-default"
+
+        
+        
