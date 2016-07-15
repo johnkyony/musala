@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails'
 gem "socialization"
+gem 'will_paginate-bootstrap'
 gem "erb2haml", :group => :development
 group :development, :test do
   gem 'byebug'

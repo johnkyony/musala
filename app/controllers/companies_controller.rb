@@ -1,12 +1,12 @@
 class CompaniesController < ApplicationController
   before_action :authenticate_user!
   def index
-  	@companies = Company.all
+  	@companies = Company.all.paginate(page: params[:page], per_page: 10)
   end
 
   def show
   	@company = Company.find(params[:id])
-  	@jobs = Job.where(:company_id => params[:id]).order(posted: :desc) 
+  	@jobs = Job.where(:company_id => params[:id]).order(posted: :desc).paginate(page: params[:page], per_page: 10) 
   	
   end
 

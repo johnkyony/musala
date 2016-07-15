@@ -3,6 +3,13 @@
     .col-lg-12
       %h2 Companies
       %hr
+  .container
+    .row
+      .col-md-8.col-xs-8.col-sm-offset-1.col-md-offset-4
+        = will_paginate @companies, renderer: BootstrapPagination::Rails
+          
+                        
+
   .row
     .col-lg-12
       %ul.thumbnails
@@ -24,4 +31,9 @@
                     = link_to "Follow" , follow_company_path(company) , class: "btn btn-default"
 
                   / %a.btn.btn-primary.btn-block{:href => "#{company.link}"} Opendefa
-                
+.container
+  .row
+    .col-md-8.col-xs-8.col-sm-offset-1.col-md-offset-4
+      = will_paginate @companies, renderer: BootstrapPagination::Rails
+        
+                        
